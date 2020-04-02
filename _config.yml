@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: AI4Love
-description: A blog that records all Cong's love for Machine Learning.
+description: A blog that records Cong's love for Machine Learning.
 github_username: CongLiu-CN
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "AIisLove"
