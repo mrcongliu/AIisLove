@@ -1,0 +1,2924 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | AI4Love</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="summary" />
+<meta property="og:description" content="summary" />
+<link rel="canonical" href="https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html" />
+<meta property="og:url" content="https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html" />
+<meta property="og:site_name" content="AI4Love" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-04-04T00:00:00-05:00","dateModified":"2020-04-04T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html"},"description":"summary","@type":"BlogPosting","url":"https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html","headline":"Title","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://www.ai4love.xyz//feed.xml" title="AI4Love" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | AI4Love</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="summary" />
+<meta property="og:description" content="summary" />
+<link rel="canonical" href="https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html" />
+<meta property="og:url" content="https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html" />
+<meta property="og:site_name" content="AI4Love" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-04-04T00:00:00-05:00","dateModified":"2020-04-04T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html"},"description":"summary","@type":"BlogPosting","url":"https://www.ai4love.xyz//2020/04/04/Splitting-Your-Data.html","headline":"Title","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://www.ai4love.xyz//feed.xml" title="AI4Love" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">AI4Love</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="page-description">summary</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-04T00:00:00-05:00" itemprop="datePublished">
+        Apr 4, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      14 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/CongLiu-CN/AIisLove/tree/master/_notebooks/2020-04-04-Splitting-Your-Data.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/CongLiu-CN/AIisLove/master?filepath=_notebooks%2F2020-04-04-Splitting-Your-Data.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/CongLiu-CN/AIisLove/blob/master/_notebooks/2020-04-04-Splitting-Your-Data.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-04-04-Splitting-Your-Data.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Getting-our-data-ready-to-be-used-with-machine-learning">Getting our data ready to be used with machine learning<a class="anchor-link" href="#Getting-our-data-ready-to-be-used-with-machine-learning"> </a></h1><p>Standard imports</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Three main things we have to do:</p>
+
+<pre><code>1. Splitting the data into features and labels (usually `X` &amp; `y`)
+2. Filling (also called imputing) or disregarding missing values
+3. Converting non-numerical values to numerical values (also called feature encoding)</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's still use our <strong>heart disease</strong> data by importing it from Github:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">heart_disease</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/CongLiu-CN/zero-to-mastery-ml/master/data/heart-disease.csv&quot;</span><span class="p">)</span>
+<span class="n">heart_disease</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>sex</th>
+      <th>cp</th>
+      <th>trestbps</th>
+      <th>chol</th>
+      <th>fbs</th>
+      <th>restecg</th>
+      <th>thalach</th>
+      <th>exang</th>
+      <th>oldpeak</th>
+      <th>slope</th>
+      <th>ca</th>
+      <th>thal</th>
+      <th>target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>63</td>
+      <td>1</td>
+      <td>3</td>
+      <td>145</td>
+      <td>233</td>
+      <td>1</td>
+      <td>0</td>
+      <td>150</td>
+      <td>0</td>
+      <td>2.3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>37</td>
+      <td>1</td>
+      <td>2</td>
+      <td>130</td>
+      <td>250</td>
+      <td>0</td>
+      <td>1</td>
+      <td>187</td>
+      <td>0</td>
+      <td>3.5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>41</td>
+      <td>0</td>
+      <td>1</td>
+      <td>130</td>
+      <td>204</td>
+      <td>0</td>
+      <td>0</td>
+      <td>172</td>
+      <td>0</td>
+      <td>1.4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>56</td>
+      <td>1</td>
+      <td>1</td>
+      <td>120</td>
+      <td>236</td>
+      <td>0</td>
+      <td>1</td>
+      <td>178</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>57</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120</td>
+      <td>354</td>
+      <td>0</td>
+      <td>1</td>
+      <td>163</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">heart_disease</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>sex</th>
+      <th>cp</th>
+      <th>trestbps</th>
+      <th>chol</th>
+      <th>fbs</th>
+      <th>restecg</th>
+      <th>thalach</th>
+      <th>exang</th>
+      <th>oldpeak</th>
+      <th>slope</th>
+      <th>ca</th>
+      <th>thal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>63</td>
+      <td>1</td>
+      <td>3</td>
+      <td>145</td>
+      <td>233</td>
+      <td>1</td>
+      <td>0</td>
+      <td>150</td>
+      <td>0</td>
+      <td>2.3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>37</td>
+      <td>1</td>
+      <td>2</td>
+      <td>130</td>
+      <td>250</td>
+      <td>0</td>
+      <td>1</td>
+      <td>187</td>
+      <td>0</td>
+      <td>3.5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>41</td>
+      <td>0</td>
+      <td>1</td>
+      <td>130</td>
+      <td>204</td>
+      <td>0</td>
+      <td>0</td>
+      <td>172</td>
+      <td>0</td>
+      <td>1.4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>56</td>
+      <td>1</td>
+      <td>1</td>
+      <td>120</td>
+      <td>236</td>
+      <td>0</td>
+      <td>1</td>
+      <td>178</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>57</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120</td>
+      <td>354</td>
+      <td>0</td>
+      <td>1</td>
+      <td>163</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">heart_disease</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
+<span class="n">y</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    1
+1    1
+2    1
+3    1
+4    1
+Name: target, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Split-the-data-into-training-and-test-sets:">1. Split the data into training and test sets:<a class="anchor-link" href="#1.-Split-the-data-into-training-and-test-sets:"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>((242, 13), (61, 13), (242,), (61,))</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.8</span><span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(242.4, 242)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">242</span> <span class="o">+</span> <span class="mi">61</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">heart_disease</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-Make-sure-it's-all-numerical">2. Make sure it's all numerical<a class="anchor-link" href="#2.-Make-sure-it's-all-numerical"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/CongLiu-CN/zero-to-mastery-ml/master/data/car-sales-extended.csv&quot;</span><span class="p">)</span>
+<span class="n">car_sales</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Make</th>
+      <th>Colour</th>
+      <th>Odometer (KM)</th>
+      <th>Doors</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Honda</td>
+      <td>White</td>
+      <td>35431</td>
+      <td>4</td>
+      <td>15323</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>BMW</td>
+      <td>Blue</td>
+      <td>192714</td>
+      <td>5</td>
+      <td>19943</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Honda</td>
+      <td>White</td>
+      <td>84714</td>
+      <td>4</td>
+      <td>28343</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Toyota</td>
+      <td>White</td>
+      <td>154365</td>
+      <td>4</td>
+      <td>13434</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Nissan</td>
+      <td>Blue</td>
+      <td>181577</td>
+      <td>3</td>
+      <td>14043</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">car_sales</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1000</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             object
+Colour           object
+Odometer (KM)     int64
+Doors             int64
+Price             int64
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Split the data into X &amp; y:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">car_sales</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">car_sales</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Split the data into training &amp; test:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span>
+                                                    <span class="n">y</span><span class="p">,</span>
+                                                    <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Build machine learning model:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">----------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>                           Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-13-4b70515c7cdf&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      2</span> 
+<span class="ansi-green-fg">      3</span> model <span class="ansi-yellow-intense-fg ansi-bold">=</span> RandomForestRegressor<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>model<span class="ansi-yellow-intense-fg ansi-bold">.</span>fit<span class="ansi-yellow-intense-fg ansi-bold">(</span>X_train<span class="ansi-yellow-intense-fg ansi-bold">,</span> y_train<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      5</span> model<span class="ansi-yellow-intense-fg ansi-bold">.</span>score<span class="ansi-yellow-intense-fg ansi-bold">(</span>X_test<span class="ansi-yellow-intense-fg ansi-bold">,</span> y_test<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\ensemble\_forest.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y, sample_weight)</span>
+<span class="ansi-green-fg">    293</span>         &#34;&#34;&#34;
+<span class="ansi-green-fg">    294</span>         <span class="ansi-red-intense-fg ansi-bold"># Validate or convert input data</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 295</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>X <span class="ansi-yellow-intense-fg ansi-bold">=</span> check_array<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> accept_sparse<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#34;csc&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">=</span>DTYPE<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    296</span>         y <span class="ansi-yellow-intense-fg ansi-bold">=</span> check_array<span class="ansi-yellow-intense-fg ansi-bold">(</span>y<span class="ansi-yellow-intense-fg ansi-bold">,</span> accept_sparse<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;csc&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> ensure_2d<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">False</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    297</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> sample_weight <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">not</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ansi-cyan-fg">check_array</span><span class="ansi-blue-intense-fg ansi-bold">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, warn_on_dtype, estimator)</span>
+<span class="ansi-green-fg">    529</span>                     array <span class="ansi-yellow-intense-fg ansi-bold">=</span> array<span class="ansi-yellow-intense-fg ansi-bold">.</span>astype<span class="ansi-yellow-intense-fg ansi-bold">(</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> casting<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#34;unsafe&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> copy<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">False</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    530</span>                 <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 531</span><span class="ansi-yellow-intense-fg ansi-bold">                     </span>array <span class="ansi-yellow-intense-fg ansi-bold">=</span> np<span class="ansi-yellow-intense-fg ansi-bold">.</span>asarray<span class="ansi-yellow-intense-fg ansi-bold">(</span>array<span class="ansi-yellow-intense-fg ansi-bold">,</span> order<span class="ansi-yellow-intense-fg ansi-bold">=</span>order<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">=</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    532</span>             <span class="ansi-green-intense-fg ansi-bold">except</span> ComplexWarning<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    533</span>                 raise ValueError(&#34;Complex data not supported\n&#34;
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\numpy\core\_asarray.py</span> in <span class="ansi-cyan-fg">asarray</span><span class="ansi-blue-intense-fg ansi-bold">(a, dtype, order)</span>
+<span class="ansi-green-fg">     83</span> 
+<span class="ansi-green-fg">     84</span>     &#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 85</span><span class="ansi-yellow-intense-fg ansi-bold">     </span><span class="ansi-green-intense-fg ansi-bold">return</span> array<span class="ansi-yellow-intense-fg ansi-bold">(</span>a<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> copy<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">False</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> order<span class="ansi-yellow-intense-fg ansi-bold">=</span>order<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     86</span> 
+<span class="ansi-green-fg">     87</span> 
+
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>: could not convert string to float: &#39;BMW&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Machine learning model can't handle strings, so we need to convert those strings into numbers.</p>
+<p>Turn the categories into numbers:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+
+<span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">]</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">transformer</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">([(</span><span class="s2">&quot;one_hot&quot;</span><span class="p">,</span>
+                                   <span class="n">one_hot</span><span class="p">,</span>
+                                   <span class="n">categorical_features</span><span class="p">)],</span>
+                                   <span class="n">remainder</span><span class="o">=</span><span class="s2">&quot;passthrough&quot;</span><span class="p">)</span>
+
+<span class="n">transformed_X</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">transformed_X</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0.00000e+00, 1.00000e+00, 0.00000e+00, ..., 1.00000e+00,
+        0.00000e+00, 3.54310e+04],
+       [1.00000e+00, 0.00000e+00, 0.00000e+00, ..., 0.00000e+00,
+        1.00000e+00, 1.92714e+05],
+       [0.00000e+00, 1.00000e+00, 0.00000e+00, ..., 1.00000e+00,
+        0.00000e+00, 8.47140e+04],
+       ...,
+       [0.00000e+00, 0.00000e+00, 1.00000e+00, ..., 1.00000e+00,
+        0.00000e+00, 6.66040e+04],
+       [0.00000e+00, 1.00000e+00, 0.00000e+00, ..., 1.00000e+00,
+        0.00000e+00, 2.15883e+05],
+       [0.00000e+00, 0.00000e+00, 0.00000e+00, ..., 1.00000e+00,
+        0.00000e+00, 2.48360e+05]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">transformed_X</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>35431.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>192714.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>84714.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>154365.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>181577.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>35820.0</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>155144.0</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>66604.0</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>215883.0</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>248360.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 13 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What OneHotEncoder does under the hood:</p>
+<p><img src="/AIisLove/images/copied_from_nb/my_icons/one-hot-encoding.JPG" alt="" /></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dummies</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">car_sales</span><span class="p">[[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">]])</span>
+<span class="n">dummies</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Doors</th>
+      <th>Make_BMW</th>
+      <th>Make_Honda</th>
+      <th>Make_Nissan</th>
+      <th>Make_Toyota</th>
+      <th>Colour_Black</th>
+      <th>Colour_Blue</th>
+      <th>Colour_Green</th>
+      <th>Colour_Red</th>
+      <th>Colour_White</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 10 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's refit the model:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">transformed_X</span><span class="p">,</span>
+                                                    <span class="n">y</span><span class="p">,</span>
+                                                    <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion=&#39;mse&#39;,
+                      max_depth=None, max_features=&#39;auto&#39;, max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=None, oob_score=False,
+                      random_state=None, verbose=0, warm_start=False)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.19383319494749351</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why the score is so low?</p>
+<p>-----Intentionally blank line-----</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-What-if-there-were-missing-values?">3. What if there were missing values?<a class="anchor-link" href="#3.-What-if-there-were-missing-values?"> </a></h2><ol>
+<li>Fill them with some value (also known as imputation).</li>
+<li>Remove the samples with missing data altogether.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This time what we import is the car sales data with missing values:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales_missing</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/CongLiu-CN/zero-to-mastery-ml/master/data/car-sales-extended-missing-data.csv&quot;</span><span class="p">)</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Make</th>
+      <th>Colour</th>
+      <th>Odometer (KM)</th>
+      <th>Doors</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Honda</td>
+      <td>White</td>
+      <td>35431.0</td>
+      <td>4.0</td>
+      <td>15323.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>BMW</td>
+      <td>Blue</td>
+      <td>192714.0</td>
+      <td>5.0</td>
+      <td>19943.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Honda</td>
+      <td>White</td>
+      <td>84714.0</td>
+      <td>4.0</td>
+      <td>28343.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Toyota</td>
+      <td>White</td>
+      <td>154365.0</td>
+      <td>4.0</td>
+      <td>13434.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Nissan</td>
+      <td>Blue</td>
+      <td>181577.0</td>
+      <td>3.0</td>
+      <td>14043.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales_missing</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             49
+Colour           50
+Odometer (KM)    50
+Doors            50
+Price            50
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create X &amp; y:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">car_sales_missing</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's try and convert our data to numbers.</p>
+<p>Turn the categories into numbers:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+
+<span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">]</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">transformer</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">([(</span><span class="s2">&quot;one_hot&quot;</span><span class="p">,</span>
+                                   <span class="n">one_hot</span><span class="p">,</span>
+                                   <span class="n">categorical_features</span><span class="p">)],</span>
+                                   <span class="n">remainder</span><span class="o">=</span><span class="s2">&quot;passthrough&quot;</span><span class="p">)</span>
+
+<span class="n">transformed_X</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">transformed_X</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">----------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>                           Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-22-c22fbfad0141&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      9</span>                                    remainder=&#34;passthrough&#34;)
+<span class="ansi-green-fg">     10</span> 
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 11</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>transformed_X <span class="ansi-yellow-intense-fg ansi-bold">=</span> transformer<span class="ansi-yellow-intense-fg ansi-bold">.</span>fit_transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     12</span> transformed_X
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\compose\_column_transformer.py</span> in <span class="ansi-cyan-fg">fit_transform</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y)</span>
+<span class="ansi-green-fg">    516</span>         self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_validate_remainder<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    517</span> 
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 518</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>result <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_fit_transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> y<span class="ansi-yellow-intense-fg ansi-bold">,</span> _fit_transform_one<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    519</span> 
+<span class="ansi-green-fg">    520</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> <span class="ansi-green-intense-fg ansi-bold">not</span> result<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\compose\_column_transformer.py</span> in <span class="ansi-cyan-fg">_fit_transform</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y, func, fitted)</span>
+<span class="ansi-green-fg">    446</span>             self._iter(fitted=fitted, replace_strings=True))
+<span class="ansi-green-fg">    447</span>         <span class="ansi-green-intense-fg ansi-bold">try</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 448</span><span class="ansi-yellow-intense-fg ansi-bold">             return Parallel(n_jobs=self.n_jobs)(
+</span><span class="ansi-green-fg">    449</span>                 delayed(func)(
+<span class="ansi-green-fg">    450</span>                     transformer<span class="ansi-yellow-intense-fg ansi-bold">=</span>clone<span class="ansi-yellow-intense-fg ansi-bold">(</span>trans<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">if</span> <span class="ansi-green-intense-fg ansi-bold">not</span> fitted <span class="ansi-green-intense-fg ansi-bold">else</span> trans<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\parallel.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-intense-fg ansi-bold">(self, iterable)</span>
+<span class="ansi-green-fg">   1002</span>             <span class="ansi-red-intense-fg ansi-bold"># remaining jobs.</span>
+<span class="ansi-green-fg">   1003</span>             self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_iterating <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-green-intense-fg ansi-bold">False</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1004</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">if</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>dispatch_one_batch<span class="ansi-yellow-intense-fg ansi-bold">(</span>iterator<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">   1005</span>                 self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_iterating <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_original_iterator <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">not</span> <span class="ansi-green-intense-fg ansi-bold">None</span>
+<span class="ansi-green-fg">   1006</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\parallel.py</span> in <span class="ansi-cyan-fg">dispatch_one_batch</span><span class="ansi-blue-intense-fg ansi-bold">(self, iterator)</span>
+<span class="ansi-green-fg">    833</span>                 <span class="ansi-green-intense-fg ansi-bold">return</span> <span class="ansi-green-intense-fg ansi-bold">False</span>
+<span class="ansi-green-fg">    834</span>             <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 835</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_dispatch<span class="ansi-yellow-intense-fg ansi-bold">(</span>tasks<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    836</span>                 <span class="ansi-green-intense-fg ansi-bold">return</span> <span class="ansi-green-intense-fg ansi-bold">True</span>
+<span class="ansi-green-fg">    837</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\parallel.py</span> in <span class="ansi-cyan-fg">_dispatch</span><span class="ansi-blue-intense-fg ansi-bold">(self, batch)</span>
+<span class="ansi-green-fg">    752</span>         <span class="ansi-green-intense-fg ansi-bold">with</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_lock<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    753</span>             job_idx <span class="ansi-yellow-intense-fg ansi-bold">=</span> len<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_jobs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 754</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>job <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_backend<span class="ansi-yellow-intense-fg ansi-bold">.</span>apply_async<span class="ansi-yellow-intense-fg ansi-bold">(</span>batch<span class="ansi-yellow-intense-fg ansi-bold">,</span> callback<span class="ansi-yellow-intense-fg ansi-bold">=</span>cb<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    755</span>             <span class="ansi-red-intense-fg ansi-bold"># A job can complete so quickly than its callback is</span>
+<span class="ansi-green-fg">    756</span>             <span class="ansi-red-intense-fg ansi-bold"># called before we get here, causing self._jobs to</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\_parallel_backends.py</span> in <span class="ansi-cyan-fg">apply_async</span><span class="ansi-blue-intense-fg ansi-bold">(self, func, callback)</span>
+<span class="ansi-green-fg">    207</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> apply_async<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> func<span class="ansi-yellow-intense-fg ansi-bold">,</span> callback<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    208</span>         <span class="ansi-blue-intense-fg ansi-bold">&#34;&#34;&#34;Schedule a func to be run&#34;&#34;&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 209</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>result <span class="ansi-yellow-intense-fg ansi-bold">=</span> ImmediateResult<span class="ansi-yellow-intense-fg ansi-bold">(</span>func<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    210</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> callback<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    211</span>             callback<span class="ansi-yellow-intense-fg ansi-bold">(</span>result<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\_parallel_backends.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, batch)</span>
+<span class="ansi-green-fg">    588</span>         <span class="ansi-red-intense-fg ansi-bold"># Don&#39;t delay the application, to avoid keeping the input</span>
+<span class="ansi-green-fg">    589</span>         <span class="ansi-red-intense-fg ansi-bold"># arguments in memory</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 590</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>results <span class="ansi-yellow-intense-fg ansi-bold">=</span> batch<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    591</span> 
+<span class="ansi-green-fg">    592</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> get<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\parallel.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    253</span>         <span class="ansi-red-intense-fg ansi-bold"># change the default number of processes to -1</span>
+<span class="ansi-green-fg">    254</span>         <span class="ansi-green-intense-fg ansi-bold">with</span> parallel_backend<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_backend<span class="ansi-yellow-intense-fg ansi-bold">,</span> n_jobs<span class="ansi-yellow-intense-fg ansi-bold">=</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_n_jobs<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 255</span><span class="ansi-yellow-intense-fg ansi-bold">             return [func(*args, **kwargs)
+</span><span class="ansi-green-fg">    256</span>                     for func, args, kwargs in self.items]
+<span class="ansi-green-fg">    257</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\joblib\parallel.py</span> in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-intense-fg ansi-bold">(.0)</span>
+<span class="ansi-green-fg">    253</span>         <span class="ansi-red-intense-fg ansi-bold"># change the default number of processes to -1</span>
+<span class="ansi-green-fg">    254</span>         <span class="ansi-green-intense-fg ansi-bold">with</span> parallel_backend<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_backend<span class="ansi-yellow-intense-fg ansi-bold">,</span> n_jobs<span class="ansi-yellow-intense-fg ansi-bold">=</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_n_jobs<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 255</span><span class="ansi-yellow-intense-fg ansi-bold">             return [func(*args, **kwargs)
+</span><span class="ansi-green-fg">    256</span>                     for func, args, kwargs in self.items]
+<span class="ansi-green-fg">    257</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\pipeline.py</span> in <span class="ansi-cyan-fg">_fit_transform_one</span><span class="ansi-blue-intense-fg ansi-bold">(transformer, X, y, weight, message_clsname, message, **fit_params)</span>
+<span class="ansi-green-fg">    726</span>     <span class="ansi-green-intense-fg ansi-bold">with</span> _print_elapsed_time<span class="ansi-yellow-intense-fg ansi-bold">(</span>message_clsname<span class="ansi-yellow-intense-fg ansi-bold">,</span> message<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    727</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> hasattr<span class="ansi-yellow-intense-fg ansi-bold">(</span>transformer<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;fit_transform&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 728</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>res <span class="ansi-yellow-intense-fg ansi-bold">=</span> transformer<span class="ansi-yellow-intense-fg ansi-bold">.</span>fit_transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> y<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>fit_params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    729</span>         <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    730</span>             res <span class="ansi-yellow-intense-fg ansi-bold">=</span> transformer<span class="ansi-yellow-intense-fg ansi-bold">.</span>fit<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> y<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>fit_params<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\preprocessing\_encoders.py</span> in <span class="ansi-cyan-fg">fit_transform</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y)</span>
+<span class="ansi-green-fg">    370</span>         &#34;&#34;&#34;
+<span class="ansi-green-fg">    371</span>         self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_validate_keywords<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 372</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> super<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>fit_transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> y<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    373</span> 
+<span class="ansi-green-fg">    374</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> X<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\base.py</span> in <span class="ansi-cyan-fg">fit_transform</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y, **fit_params)</span>
+<span class="ansi-green-fg">    569</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> y <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    570</span>             <span class="ansi-red-intense-fg ansi-bold"># fit method of arity 1 (unsupervised transformation)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 571</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>fit<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>fit_params<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    572</span>         <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    573</span>             <span class="ansi-red-intense-fg ansi-bold"># fit method of arity 2 (supervised transformation)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\preprocessing\_encoders.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y)</span>
+<span class="ansi-green-fg">    345</span>         &#34;&#34;&#34;
+<span class="ansi-green-fg">    346</span>         self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_validate_keywords<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 347</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_fit<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> handle_unknown<span class="ansi-yellow-intense-fg ansi-bold">=</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>handle_unknown<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    348</span>         self<span class="ansi-yellow-intense-fg ansi-bold">.</span>drop_idx_ <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_compute_drop_idx<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    349</span>         <span class="ansi-green-intense-fg ansi-bold">return</span> self
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\preprocessing\_encoders.py</span> in <span class="ansi-cyan-fg">_fit</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, handle_unknown)</span>
+<span class="ansi-green-fg">     72</span> 
+<span class="ansi-green-fg">     73</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> _fit<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> X<span class="ansi-yellow-intense-fg ansi-bold">,</span> handle_unknown<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;error&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 74</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>X_list<span class="ansi-yellow-intense-fg ansi-bold">,</span> n_samples<span class="ansi-yellow-intense-fg ansi-bold">,</span> n_features <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_check_X<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     75</span> 
+<span class="ansi-green-fg">     76</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>categories <span class="ansi-yellow-intense-fg ansi-bold">!=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;auto&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\preprocessing\_encoders.py</span> in <span class="ansi-cyan-fg">_check_X</span><span class="ansi-blue-intense-fg ansi-bold">(self, X)</span>
+<span class="ansi-green-fg">     58</span>         <span class="ansi-green-intense-fg ansi-bold">for</span> i <span class="ansi-green-intense-fg ansi-bold">in</span> range<span class="ansi-yellow-intense-fg ansi-bold">(</span>n_features<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">     59</span>             Xi <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_get_feature<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">,</span> feature_idx<span class="ansi-yellow-intense-fg ansi-bold">=</span>i<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 60</span><span class="ansi-yellow-intense-fg ansi-bold">             Xi = check_array(Xi, ensure_2d=False, dtype=None,
+</span><span class="ansi-green-fg">     61</span>                              force_all_finite=needs_validation)
+<span class="ansi-green-fg">     62</span>             X_columns<span class="ansi-yellow-intense-fg ansi-bold">.</span>append<span class="ansi-yellow-intense-fg ansi-bold">(</span>Xi<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ansi-cyan-fg">check_array</span><span class="ansi-blue-intense-fg ansi-bold">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, warn_on_dtype, estimator)</span>
+<span class="ansi-green-fg">    575</span> 
+<span class="ansi-green-fg">    576</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> force_all_finite<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 577</span><span class="ansi-yellow-intense-fg ansi-bold">             _assert_all_finite(array,
+</span><span class="ansi-green-fg">    578</span>                                allow_nan=force_all_finite == &#39;allow-nan&#39;)
+<span class="ansi-green-fg">    579</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">E:\machine_learning\env\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ansi-cyan-fg">_assert_all_finite</span><span class="ansi-blue-intense-fg ansi-bold">(X, allow_nan, msg_dtype)</span>
+<span class="ansi-green-fg">     63</span>     <span class="ansi-green-intense-fg ansi-bold">elif</span> X<span class="ansi-yellow-intense-fg ansi-bold">.</span>dtype <span class="ansi-yellow-intense-fg ansi-bold">==</span> np<span class="ansi-yellow-intense-fg ansi-bold">.</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;object&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">and</span> <span class="ansi-green-intense-fg ansi-bold">not</span> allow_nan<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">     64</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> _object_dtype_isnan<span class="ansi-yellow-intense-fg ansi-bold">(</span>X<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>any<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 65</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">raise</span> ValueError<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;Input contains NaN&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     66</span> 
+<span class="ansi-green-fg">     67</span> 
+
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>: Input contains NaN</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why there is an error?</p>
+<p>-----Intentionally blank line-----</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Doors&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>4.0    811
+5.0     75
+3.0     64
+Name: Doors, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Option-1:-Fill-missing-data-with-Pandas">Option 1: Fill missing data with Pandas<a class="anchor-link" href="#Option-1:-Fill-missing-data-with-Pandas"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Learn more about filling missing values with pandas:
+    <a href="https://www.geeksforgeeks.org/python-pandas-dataframe-fillna-to-replace-null-values-in-dataframe/">https://www.geeksforgeeks.org/python-pandas-dataframe-fillna-to-replace-null-values-in-dataframe/</a></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill the &quot;Make&quot; column</span>
+<span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;missing&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+
+<span class="c1"># Fill the &quot;Colour&quot; column</span>
+<span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Colour&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;missing&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Fill the &quot;Odometer (KM)&quot; column</span>
+<span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Odometer (KM)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Odometer (KM)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Fill the &quot;Doors&quot; column</span>
+<span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Doors&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check our dataframe again</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make              0
+Colour            0
+Odometer (KM)     0
+Doors             0
+Price            50
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove rows with missing Price value</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales_missing</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             0
+Colour           0
+Odometer (KM)    0
+Doors            0
+Price            0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we have lost 50 data because of the removed data in "Price" column.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">car_sales_missing</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>950</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The missing values are all filled or removed, so we can convert them.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">car_sales_missing</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's try and convert our data to numbers.
+Turn the categories into numbers:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+
+<span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">]</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">transformer</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">([(</span><span class="s2">&quot;one_hot&quot;</span><span class="p">,</span>
+                                   <span class="n">one_hot</span><span class="p">,</span>
+                                   <span class="n">categorical_features</span><span class="p">)],</span>
+                                   <span class="n">remainder</span><span class="o">=</span><span class="s2">&quot;passthrough&quot;</span><span class="p">)</span>
+
+<span class="n">transformed_X</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">car_sales_missing</span><span class="p">)</span>
+<span class="n">transformed_X</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0.00000e+00, 1.00000e+00, 0.00000e+00, ..., 0.00000e+00,
+        3.54310e+04, 1.53230e+04],
+       [1.00000e+00, 0.00000e+00, 0.00000e+00, ..., 1.00000e+00,
+        1.92714e+05, 1.99430e+04],
+       [0.00000e+00, 1.00000e+00, 0.00000e+00, ..., 0.00000e+00,
+        8.47140e+04, 2.83430e+04],
+       ...,
+       [0.00000e+00, 0.00000e+00, 1.00000e+00, ..., 0.00000e+00,
+        6.66040e+04, 3.15700e+04],
+       [0.00000e+00, 1.00000e+00, 0.00000e+00, ..., 0.00000e+00,
+        2.15883e+05, 4.00100e+03],
+       [0.00000e+00, 0.00000e+00, 0.00000e+00, ..., 0.00000e+00,
+        2.48360e+05, 1.27320e+04]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Option-2:-Filling-missing-data-and-transforming-categorical-data-with-Scikit-Learn">Option 2: Filling missing data and transforming categorical data with Scikit-Learn<a class="anchor-link" href="#Option-2:-Filling-missing-data-and-transforming-categorical-data-with-Scikit-Learn"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The main takeaways:</p>
+<ul>
+<li>Split your data first, always keep your training &amp; test data separate</li>
+<li>Fill/transform the training set and test sets separately</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># standard imports</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">car_sales_missing</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/CongLiu-CN/zero-to-mastery-ml/master/data/car-sales-extended-missing-data.csv&quot;</span><span class="p">)</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Make</th>
+      <th>Colour</th>
+      <th>Odometer (KM)</th>
+      <th>Doors</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Honda</td>
+      <td>White</td>
+      <td>35431.0</td>
+      <td>4.0</td>
+      <td>15323.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>BMW</td>
+      <td>Blue</td>
+      <td>192714.0</td>
+      <td>5.0</td>
+      <td>19943.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Honda</td>
+      <td>White</td>
+      <td>84714.0</td>
+      <td>4.0</td>
+      <td>28343.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Toyota</td>
+      <td>White</td>
+      <td>154365.0</td>
+      <td>4.0</td>
+      <td>13434.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Nissan</td>
+      <td>Blue</td>
+      <td>181577.0</td>
+      <td>3.0</td>
+      <td>14043.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check missing values</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             49
+Colour           50
+Odometer (KM)    50
+Doors            50
+Price            50
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Drop the rows with no labels</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             47
+Colour           46
+Odometer (KM)    48
+Doors            47
+Price             0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note the data is split before any filling or transformations.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># Split into X &amp; y</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">car_sales_missing</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">car_sales_missing</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span>
+
+<span class="c1"># Split data into train and test</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span>
+                                                    <span class="n">y</span><span class="p">,</span>
+                                                    <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check missing values</span>
+<span class="n">X</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             47
+Colour           46
+Odometer (KM)    48
+Doors            47
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's fill the missing values.</p>
+<p>We must fill the training and test values separately to ensure training data stays with the training dta and test data stays with the test data.</p>
+<p><strong>Note</strong>: We use <code>fit_transform()</code> on the training data and <code>transform()</code> on the testing data. In essence, we learn the patterns in the training set and transform it via imputation (fit, then transform). Then we take those same patterns and fill the test set (transform only).</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill missing values with Scikit-Learn</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+
+<span class="c1"># Fill categorical values with &#39;missing&#39; &amp; numerical values with mean</span>
+<span class="n">cat_imputer</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;constant&quot;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="s2">&quot;missing&quot;</span><span class="p">)</span>
+<span class="n">door_imputer</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;constant&quot;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">num_imputer</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
+
+<span class="c1"># Define columns</span>
+<span class="n">cat_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">]</span>
+<span class="n">door_feature</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Doors&quot;</span><span class="p">]</span>
+<span class="n">num_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Odometer (KM)&quot;</span><span class="p">]</span>
+
+<span class="c1"># Create an imputer (something that fills missing data)</span>
+<span class="n">imputer</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">([</span>
+    <span class="p">(</span><span class="s2">&quot;cat_imputer&quot;</span><span class="p">,</span> <span class="n">cat_imputer</span><span class="p">,</span> <span class="n">cat_features</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;door_imputer&quot;</span><span class="p">,</span> <span class="n">door_imputer</span><span class="p">,</span> <span class="n">door_feature</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;num_imputer&quot;</span><span class="p">,</span> <span class="n">num_imputer</span><span class="p">,</span> <span class="n">num_features</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="c1"># Fill train and test values separately</span>
+<span class="n">filled_X_train</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">filled_X_test</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Check filled X_train</span>
+<span class="n">filled_X_train</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[&#39;Nissan&#39;, &#39;Blue&#39;, 3.0, 24219.0],
+       [&#39;Honda&#39;, &#39;Blue&#39;, 4.0, 219217.0],
+       [&#39;Nissan&#39;, &#39;White&#39;, 4.0, 152215.0],
+       ...,
+       [&#39;Toyota&#39;, &#39;White&#39;, 4.0, 112292.0],
+       [&#39;Toyota&#39;, &#39;White&#39;, 4.0, 83594.0],
+       [&#39;Nissan&#39;, &#39;White&#39;, 3.0, 131296.40416666667]], dtype=object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we've filled our missing values, let's check how many are missing from each set. (Should be 0)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get our transformed data arrays back into DataFrames</span>
+<span class="n">car_sales_filled_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">filled_X_train</span><span class="p">,</span>
+                                      <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">,</span> <span class="s2">&quot;Odometer (KM)&quot;</span><span class="p">])</span>
+<span class="n">car_sales_filled_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">filled_X_test</span><span class="p">,</span>
+                                     <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">,</span> <span class="s2">&quot;Odometer (KM)&quot;</span><span class="p">])</span>
+
+<span class="c1"># Check missing data in training set</span>
+<span class="n">car_sales_filled_train</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             0
+Colour           0
+Doors            0
+Odometer (KM)    0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check missing data in test set</span>
+<span class="n">car_sales_filled_test</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             0
+Colour           0
+Doors            0
+Odometer (KM)    0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Look! No more missing values!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check to see the original... still missing values</span>
+<span class="n">car_sales_missing</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Make             47
+Colour           46
+Odometer (KM)    48
+Doors            47
+Price             0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ok, no more missing values but we've still got to turn our data into numbers.</p>
+<p>Let's do that using one hot encoding.</p>
+<p>Again, keeping our training and test data separate.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import OneHotEncoder class from sklearn</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+
+<span class="c1"># Now let&#39;s one hot encode the features with the same code as before</span>
+<span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Make&quot;</span><span class="p">,</span> <span class="s2">&quot;Colour&quot;</span><span class="p">,</span> <span class="s2">&quot;Doors&quot;</span><span class="p">]</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">transformer</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">([(</span><span class="s2">&quot;one_hot&quot;</span><span class="p">,</span>
+                                  <span class="n">one_hot</span><span class="p">,</span>
+                                  <span class="n">categorical_features</span><span class="p">)],</span>
+                                  <span class="n">remainder</span><span class="o">=</span><span class="s2">&quot;passthrough&quot;</span><span class="p">)</span>
+
+<span class="c1"># Fill train and test values separately</span>
+<span class="n">transformed_X_train</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">car_sales_filled_train</span><span class="p">)</span>
+<span class="n">transformed_X_test</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">car_sales_filled_test</span><span class="p">)</span>
+
+<span class="c1"># Check transformed and filled X_train</span>
+<span class="n">transformed_X_train</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0.00000000e+00, 0.00000000e+00, 1.00000000e+00, ...,
+        0.00000000e+00, 0.00000000e+00, 2.42190000e+04],
+       [0.00000000e+00, 1.00000000e+00, 0.00000000e+00, ...,
+        1.00000000e+00, 0.00000000e+00, 2.19217000e+05],
+       [0.00000000e+00, 0.00000000e+00, 1.00000000e+00, ...,
+        1.00000000e+00, 0.00000000e+00, 1.52215000e+05],
+       ...,
+       [0.00000000e+00, 0.00000000e+00, 0.00000000e+00, ...,
+        1.00000000e+00, 0.00000000e+00, 1.12292000e+05],
+       [0.00000000e+00, 0.00000000e+00, 0.00000000e+00, ...,
+        1.00000000e+00, 0.00000000e+00, 8.35940000e+04],
+       [0.00000000e+00, 0.00000000e+00, 1.00000000e+00, ...,
+        0.00000000e+00, 0.00000000e+00, 1.31296404e+05]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Fit-a-model">Fit a model<a class="anchor-link" href="#Fit-a-model"> </a></h3><p>Wonderful! Now we've filled and transformed our data, ensuring the training and test sets have been kept separate. Let's fit a model to the training set and evaluate it on the test set.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Since we&#39;ve transformed X, let&#39;s see if we can fit a model</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+
+<span class="c1"># Setup model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">()</span>
+
+<span class="c1"># Make sure to use transformed (filled and one-hot encoded X data)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">transformed_X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">transformed_X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.07839674412816233</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why the score is even lower than the previous one?</p>
+<p>-----Becaue of the data we lost-----</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">car_sales</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">car_sales_missing</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(1000, 950)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The process of filling missing values is called <strong>Imputation</strong>.</p>
+<p>The process of turn non-numerical values into numerical values is called <strong>Feature Engineering</strong> or <strong>Fearure Encoding</strong>.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/2020/04/04/Splitting-Your-Data.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A blog that records Cong&#39;s love for Machine Learning.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/CongLiu-CN" title="CongLiu-CN"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/tsong_liu" title="tsong_liu"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
