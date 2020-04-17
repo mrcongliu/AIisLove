@@ -91,7 +91,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      14 min read
+      15 min read
     
 </span></p>
 
@@ -561,6 +561,16 @@ Name: target, dtype: int64</pre>
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What we are doing above is split the X into X_train &amp; X_test and the y into y_train &amp; y_test.</p>
+<p>The <code>test_size</code> parameter can be replaced by <code>train_size</code>. You can use either one.
+The <code>test_size</code> represent the proportion of the dataset to include in the test split. And <code>train_size</code> refers to the train split, respectively.</p>
+<p>In this case, we want to set the proportion for test split as 0.2, which means it is 0.8 for train split:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -594,6 +604,13 @@ Name: target, dtype: int64</pre>
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>By adding up the train split and the test split, we can get the total dataset, which can be proved by the following calculation:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -629,7 +646,9 @@ Name: target, dtype: int64</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Make-sure-it's-all-numerical">2. Make sure it's all numerical<a class="anchor-link" href="#2.-Make-sure-it's-all-numerical"> </a></h2>
+<h2 id="2.-Make-sure-it's-all-numerical">2. Make sure it's all numerical<a class="anchor-link" href="#2.-Make-sure-it's-all-numerical"> </a></h2><p>The <strong>heart disease</strong> data owns completely numerical values, which is nice.</p>
+<p>But in most cases, we probably see a dataset with non-numerical values. For example, the <strong>car sales</strong> dataset:</p>
+
 </div>
 </div>
 </div>
@@ -807,6 +826,8 @@ dtype: object</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we know there are not numbers in the first two columns of the <code>car_sales</code> dataset. 
+What if we try to fit a machine learning model on it and see what happens?</p>
 <p>Split the data into X &amp; y:</p>
 
 </div>
@@ -929,8 +950,9 @@ dtype: object</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Machine learning model can't handle strings, so we need to convert those strings into numbers.</p>
-<p>Turn the categories into numbers:</p>
+<p>Why is there an error?</p>
+<p>Because machine learning models can't handle strings, so we need to convert those strings into numbers.</p>
+<p>So let's turn the categories into numbers:</p>
 
 </div>
 </div>
@@ -1564,7 +1586,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This time what we import is the car sales data with missing values:</p>
+<p>This time let's import a car sales dataset with missing values:</p>
 
 </div>
 </div>
@@ -1913,7 +1935,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Why there is an error?</p>
-<p>-----Intentionally blank line-----</p>
+<p>Because machine learning model can't possess unfulfiled datasets.</p>
 
 </div>
 </div>
