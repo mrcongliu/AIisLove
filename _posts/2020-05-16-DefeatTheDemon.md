@@ -1,8 +1,7 @@
 ---
-toc: true
 layout: post
 description: how to deal with childhood traumas.
-categories: [markdown]
+categories: [Mindset]
 title: Defeat The Demon
 ---
 
