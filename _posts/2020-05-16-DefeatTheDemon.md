@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: how to deal with childhood traumas.
+categories: [markdown]
+title: Defeat The Demon
+---
+
 # Defeat The Demon
 
 > If you don't go back to your childhood and touch those uncomfortable feelings, they will come back to you and hurt you repeatedly.
