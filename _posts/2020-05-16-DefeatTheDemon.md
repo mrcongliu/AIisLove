@@ -1,6 +1,6 @@
 ---
 layout: post
-description: how to deal with childhood traumas.
+description: How to deal with childhood traumas.
 categories: [Mindset]
 title: Defeat The Demon
 ---
