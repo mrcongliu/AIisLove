@@ -1,6 +1,18 @@
-# The Bits and Bytes of Computer Networking
+---
 
-**Key Concepts**
+layout: post
+
+description: The Second Section of Coursera IT support Specialist.
+
+categories: [Computer Science]
+
+title: The Bits and Bytes of Computer Networking
+
+---
+
+
+
+Key Concepts**
 
 - Describe how the TCP/IP five layer network model works.
 - Identify basic networking devices.
