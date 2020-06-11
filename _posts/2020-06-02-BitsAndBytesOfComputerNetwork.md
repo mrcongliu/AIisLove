@@ -132,11 +132,15 @@ Cat5e cables have mostly replaced those older Cat5 cables because their internal
 >
 > When an electrical pulse on one wire is accidentally detected on another wire
 
+Cat6 cables follow an even more strict specification to avoid crosstalk, making those cables more expensive. Cat6 cables can transfer data faster and more reliably than Cat5e cables can, but because their internal arrangement, they have a shorter maximium distance when used at higher speeds.
+
 > **Fiber Cables**
 >
 > Contain individual optical fibers, which are tiny tubes made out of glass about the width of a human hair
 
 Unlike copper, which uses electrical voltages, fiber cables use pulses of light to represent the ones and zeros of the underlying data.
+
+Fiber is even sometimes used specifically in environments where there's a lot of electromagnetic interference from outside sources. Because this can impact data being sent across copper wires.
 
 Fiber cables can generally transport data quicker than copper cables can, but they're much more expensive and fragile. Fiber can also transport data over much longer distances than copper can without suffering potential data loss.
 
