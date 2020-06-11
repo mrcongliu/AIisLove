@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-06-10T22:34:16-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">The Bits and Bytes of Computer Networking</title><link href="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" rel="alternate" type="text/html" title="The Bits and Bytes of Computer Networking" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork</id><content type="html" xml:base="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html">&lt;p&gt;Key Concepts**&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-06-10T22:44:18-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">The Bits and Bytes of Computer Networking</title><link href="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" rel="alternate" type="text/html" title="The Bits and Bytes of Computer Networking" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork</id><content type="html" xml:base="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html">&lt;p&gt;Key Concepts**&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Describe how the TCP/IP five layer network model works.&lt;/li&gt;
@@ -126,6 +126,8 @@
   &lt;p&gt;When an electrical pulse on one wire is accidentally detected on another wire&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;Cat6 cables follow an even more strict specification to avoid crosstalk, making those cables more expensive. Cat6 cables can transfer data faster and more reliably than Cat5e cables can, but because their internal arrangement, they have a shorter maximium distance when used at higher speeds.&lt;/p&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Fiber Cables&lt;/strong&gt;&lt;/p&gt;
 
@@ -133,6 +135,8 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;Unlike copper, which uses electrical voltages, fiber cables use pulses of light to represent the ones and zeros of the underlying data.&lt;/p&gt;
+
+&lt;p&gt;Fiber is even sometimes used specifically in environments where there’s a lot of electromagnetic interference from outside sources. Because this can impact data being sent across copper wires.&lt;/p&gt;
 
 &lt;p&gt;Fiber cables can generally transport data quicker than copper cables can, but they’re much more expensive and fragile. Fiber can also transport data over much longer distances than copper can without suffering potential data loss.&lt;/p&gt;</content><author><name></name></author><summary type="html">Key Concepts**</summary></entry><entry><title type="html">How I was rejected by 600 companies and still be OK</title><link href="https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600.html" rel="alternate" type="text/html" title="How I was rejected by 600 companies and still be OK" /><published>2020-05-22T00:00:00-05:00</published><updated>2020-05-22T00:00:00-05:00</updated><id>https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600</id><content type="html" xml:base="https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600.html">&lt;blockquote&gt;
   &lt;p&gt;I returned to Beijing on 8 May in 2020 to find a developer job. Machine learning and data analysis are my top two priorities. Unfortunately, I was rejected by over 600 companies.&lt;/p&gt;
