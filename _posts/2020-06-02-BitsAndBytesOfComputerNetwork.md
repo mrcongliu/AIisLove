@@ -144,3 +144,16 @@ Fiber is even sometimes used specifically in environments where there's a lot of
 
 Fiber cables can generally transport data quicker than copper cables can, but they're much more expensive and fragile. Fiber can also transport data over much longer distances than copper can without suffering potential data loss.
 
+#### 2.2 Hubs and Switches
+
+Unlike cables, which allow you to form point-to-point networking connections, there are network devices that allow for many computers to communicate with each other. The most simple of these devices is a hub.
+
+> **Hub**
+>
+> A physical layer device that allows for connections from many computers at once.
+
+All devices connected to a hub will end up talking to all other devices at the same time. It's up to each system connected to the hub to determine if the incoming data was meant for them, or to ignore it if it isn't. These causes a lot of noise on the network and creates what's called a collision domain.
+
+> **Collision Domain**
+>
+> A network segment where only one device can communicate at a time.
