@@ -193,3 +193,110 @@ While a hub is a layer 1 device and a switch is a layer 2 device. A router opera
 Just like a switch can inspect Ethernet data to determine where to send things, a router can inspect IP data to determine where to send things.
 
 ![]({{ site.baseurl }}/images/router inspect IP data.png "router can inspect IP data")
+
+Routers store internal tables containing information about how to route traffic between lots of different networks all over the world. The most common type of router you'll see is one for a home network, or a small office. These devices generally don't have very detailed routing tables. The purpose of these routes is mainly just to take traffic originating from inside the home, or office LAN, and to forward it along to the ISP, or Internet Service Provider. Once traffic is at the ISP, a way more sophisticated type of router takes over. These core routers from the backbone of the Internet and are directly responsible for how we send and receive data all over the Internet every single day. Core ISP routers don't just handle a lot more traffic than a home or a small office router. They also have to deal with much more complexity in making decision about where to send traffic. 
+
+![]({{ site.baseurl }}/images/routerTraffic.png "router's traffic")
+
+A core router usually has many different connections to many other routers. Routers share data with each other via a protocol known as BGP, or Border Gateway Protocol.
+
+> **Border Gateway Protocol**
+>
+> Routers share data with each other via this protocol, which lets them learn about the most optimal paths to forward traffic
+
+When you open a web browser and load a webpage, the traffic between computers and the web servers could have traveled over dozens of different routers. The Internet is incredibly large and complicated. And routers are global guides for getting traffic to the right places.
+
+
+
+#### 2.4 Servers and Clients
+
+The simplest way to think of server is as something that provides data to something requesting that data. The thing receiving the data is referred to as a client.
+
+A server is anything that can provide data to a client, but we can also use the word to refer to the primary purpose of various nodes on our network.
+
+![]({{ site.baseurl }}/images/server&client.png "server vs client")
+
+
+
+### 3. The Physical Layer
+
+#### 3.1 Moving Bits Across the Wire
+
+In some ways, the physical layer of our network stack model is the most complexible. Its main focus is on moving ones and zeros from one end of the link to the next. The physical layer consists of devices and means of transmitting bit across computer networks.
+
+> **Bit**
+>
+> The smallest representation of data that a computer can understand; it's a one or a zero
+
+These ones and zeros send across networks at the lowest level are what make up the frames and packets of data. The takeaway is that it doesn't matter whether you're streaming your favorite song, emailing your boss, or using an ATM, what you're really doing is sending ones and zeros across the physical layer of the many different networks between you and the server you're interacting with.
+
+A standard copper network table, once connected to devices on both ends, will carry a constant electrical charge. Ones and zeros are sent across those network cables through a process called modulation.
+
+> **Modulation**
+>
+> A way of varying the voltage of this charge moving across the cable
+
+When used for computer networks, this kind of modulation is more specifically known as line coding. It allows devices on either end of a link to understand that an electrical charge in a certain state is a zero, and in another state is a one. Through this seemingly simple techniques, modern networks are capable of moving 10 billion ones and zeros across a single network cable every second.
+
+![]({{ site.baseurl }}/images/lineCoding.png "line coding")
+
+
+
+#### 3.2 Twisted Pair Cabling and Duplexing
+
+The most common type of cabling used for connecting computing devices is known as twisted pair. It's called a twisted pair cable because it features pairs of copper wires that are twisted together. These pairs act as a single conduit for information, and their twisted nature helps protect against electromagnetic interference and crosstalk from neighboring pairs.
+
+![]({{ site.baseurl }}/images/cablePairs.png "cable pairs")
+
+A standard Cat6 cable has eight wires consisting of four twisted pairs inside a single jacket. Exactly how many pairs are actually in use depends on the transmission technology being used. But in all modern forms of networking, it's important to know that these cables allow for duplex communication.
+
+> **Duplex communication**
+>
+> The concept that information can flow in both directions across the cable
+
+>  **Simplex communication**
+>
+> This process is unidirectional
+
+Think about a baby monitor, where the transmission of data only goes in one direction making it a simplex communication. A phone call on the other hand is duplex since both parties can listen and speak. 
+
+![]({{ site.baseurl }}/images/duplex.png "Simplex vs Full-duplex")
+
+The way networking cables ensure that duplex communication is possible is by reserving one or two pairs for communication in one direction. They then use other one or two pairs for communicating in the other direction. So, devices on either side of a networking link can both communicate with each other at the exact same time. This is known as full duplex. 
+
+![]({{ site.baseurl }}/images/half-duplex.png "Half-duplex")
+
+If there's something wrong with the connection, you might see a network link degrade and report itself as operating as half-duplex. Half-duplex means that, while communication is possible in each direction, only one device can be communicating at a time.
+
+
+
+#### 3.3 Supplemental Reading for Ethernet Over Twisted Pair Technologies
+
+**Ethernet over twisted pair technologies** are the communications protocols that determine how much data can be sent over a twisted pair cable, how quickly that data can be sent, and how long a network cable can be before the data quality begins to degrade.
+
+Read more about Ethernet over Twisted Pair technologies:
+
+https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+
+
+
+#### 3.4 Network Ports and Patch Panels
+
+The final steps of how the physical layer works take place at the end points of our network links. Twisted Pair network cables are terminated with a plug that takes the individual internal wires and exposes them. The most common plug is knows as an RJ-45 or Registered Jack 45. 
+
+![]({{ site.baseurl }}/images/RJ45-plug.png "RJ45 port and plug")
+
+It's one of many cable plugs specifications but by far the most common in computer networking. A network cable with an RJ-45 plug can connect to an RJ-45 network port.
+
+> **Network ports** are generally directly attached to the devices that make up a computer network.
+
+Switches would have many network ports because their purpose is to connect many devices. But servers and desktops usually only have one or two. Your laptop, tablet or phone probably don't have any.
+
+![]({{ site.baseurl }}/images/linkLight.png "Link light vs activity light")
+
+Most network ports have two small LEDs. One is the link light and the other is the activity light. The link light will be lit when a cable is properly connected to two devices that are both powered on. The activity light will flash when data is actively transmitted across the cable. A long time ago, the flashing in the activity light corresponded directly to the one's and zero's being sent. Today, computer networks are so fast that the activity light doesn't really communicate much other than if there's any traffic or not. On switches, sometimes the same LED is used for both link and activity status. It might even indicate other things like links speed. You'll have to read up on a particular piece of hardware you're working with but there will almost always be some troubleshooting data available to you through port lights. Sometimes a network port isn't connected directly to a device. Instead, there might be network ports mounted in a wall or underneath your desk. These ports are generally connected to the network via cables ran through the walls that eventually end at a patch panel.
+
+![]({{ site.baseurl }}/images/patchPanel.png "Patch panel")
+
+A patch panel is a device containing many net ports but it does no other work. It's just a container for the endpoints of many runs of cable. Additional cables are then generally ran from a patch panel to switches or routers to provide network access to the computers at the other end of those links.
+
