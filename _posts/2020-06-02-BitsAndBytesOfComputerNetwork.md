@@ -30,7 +30,7 @@ Key Concepts**
 
 ### 1. The TCP/IP Five-Layer Network Model
 
-![]({{ site.baseurl }}/images/layers.jpg "The TCP/IP Five-Layer Network Model")
+![]({{ site.baseurl }}/images/layers.JPG "The TCP/IP Five-Layer Network Model")
 
 
 
@@ -94,7 +94,7 @@ The protocols at play in the application layer will be most familiar to you, sin
 >
 > 5. The application layer is the contents of the package itself.
 
-![](../images/animationOfLayers.jpg)
+![]({{ site.baseurl }}/images/animationOfLayers.JPG "Animation of Layers")
 
 
 
@@ -154,6 +154,8 @@ Unlike cables, which allow you to form point-to-point networking connections, th
 >
 > A physical layer device that allows for connections from many computers at once.
 
+![]({{ site.baseurl }}/images/hub.JPG "Hub")
+
 All devices connected to a hub will end up talking to all other devices at the same time. It's up to each system connected to the hub to determine if the incoming data was meant for them, or to ignore it if it isn't. These causes a lot of noise on the network and creates what's called a collision domain.
 
 > **Collision Domain**
@@ -164,4 +166,11 @@ All devices connected to a hub will end up talking to all other devices at the s
 
 These slows down network communications, and is the primary reason hubs are fairly rare. They're mostly a historical artifact today. A much more common way of connecting many computers is with a more sophisticated device, known as a network switch, originally known as a switching hub. 
 
-A switch is very similar to a hub, since you can connect many devices to it so they can communicate. The difference is that while a hub is a layer 1 or physical layer device, a switch is a level 2 or data link device. This means that a switch can actually inspect the contents of the Ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system. This reduces or even completely eliminates the size of collision domains on a network.
+![]({{ site.baseurl }}/images/switch.PNG "Switch")
+
+A switch is very similar to a hub, since you can connect many devices to it so they can communicate. The difference is that while a hub is a layer 1 or physical layer device, a switch is a level 2 or data link device. 
+
+![]({{ site.baseurl }}/images/hub&switch.PNG "hub vs switch")
+
+This means that a switch can actually inspect the contents of the Ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system. This reduces or even completely eliminates the size of collision domains on a network.
+
