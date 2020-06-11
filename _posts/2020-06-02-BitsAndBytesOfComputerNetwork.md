@@ -30,7 +30,7 @@ Key Concepts**
 
 ### 1. The TCP/IP Five-Layer Network Model
 
-![](../images/layers.jpg)
+![]({{ site.baseurl }}/images/layers.jpg "The TCP/IP Five-Layer Network Model")
 
 
 
@@ -144,6 +144,8 @@ Fiber is even sometimes used specifically in environments where there's a lot of
 
 Fiber cables can generally transport data quicker than copper cables can, but they're much more expensive and fragile. Fiber can also transport data over much longer distances than copper can without suffering potential data loss.
 
+
+
 #### 2.2 Hubs and Switches
 
 Unlike cables, which allow you to form point-to-point networking connections, there are network devices that allow for many computers to communicate with each other. The most simple of these devices is a hub.
@@ -161,3 +163,5 @@ All devices connected to a hub will end up talking to all other devices at the s
 > If multiple systems try sending data at the same time, the electrical pulses sent across the cable can interfere with each other.
 
 These slows down network communications, and is the primary reason hubs are fairly rare. They're mostly a historical artifact today. A much more common way of connecting many computers is with a more sophisticated device, known as a network switch, originally known as a switching hub. 
+
+A switch is very similar to a hub, since you can connect many devices to it so they can communicate. The difference is that while a hub is a layer 1 or physical layer device, a switch is a level 2 or data link device. This means that a switch can actually inspect the contents of the Ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system. This reduces or even completely eliminates the size of collision domains on a network.
