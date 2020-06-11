@@ -174,3 +174,22 @@ A switch is very similar to a hub, since you can connect many devices to it so t
 
 This means that a switch can actually inspect the contents of the Ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system. This reduces or even completely eliminates the size of collision domains on a network.
 
+
+
+#### 2.3 Routers
+
+> **Hubs and switches**
+>
+> The primary devices used to connect computers on a single network, usually referred to as a **LAN**, or **local area network**
+
+> **Router**
+>
+> A device that knows how to forward data between independent networks
+
+While a hub is a layer 1 device and a switch is a layer 2 device. A router operates at layer 3, a network layer.
+
+![]({{ site.baseurl }}/images/router.png "router operates at layer 3")
+
+Just like a switch can inspect Ethernet data to determine where to send things, a router can inspect IP data to determine where to send things.
+
+![]({{ site.baseurl }}/images/router inspect IP data.png "router can inspect IP data")
