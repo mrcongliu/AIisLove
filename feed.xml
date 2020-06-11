@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-06-01T22:04:18-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">The Bits and Bytes of Computer Networking</title><link href="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" rel="alternate" type="text/html" title="The Bits and Bytes of Computer Networking" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork</id><content type="html" xml:base="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html">&lt;p&gt;Key Concepts**&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-06-10T22:34:16-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">The Bits and Bytes of Computer Networking</title><link href="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" rel="alternate" type="text/html" title="The Bits and Bytes of Computer Networking" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork</id><content type="html" xml:base="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html">&lt;p&gt;Key Concepts**&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Describe how the TCP/IP five layer network model works.&lt;/li&gt;
@@ -115,6 +115,8 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;The most common forms of copper twisted-pair cables used in networking are Cat5, Cat5e, and Cat6 cables.&lt;/p&gt;
+
+&lt;p&gt;Differences in how these twisted pairs are arranged inside these cables can drastically alter how quickly data can be sent accross them and how resistent these signals are to outside interference.&lt;/p&gt;
 
 &lt;p&gt;Cat5e cables have mostly replaced those older Cat5 cables because their internals reduce crosstalk.&lt;/p&gt;
 
