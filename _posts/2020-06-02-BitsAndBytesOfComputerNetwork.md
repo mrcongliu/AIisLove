@@ -157,3 +157,7 @@ All devices connected to a hub will end up talking to all other devices at the s
 > **Collision Domain**
 >
 > A network segment where only one device can communicate at a time.
+>
+> If multiple systems try sending data at the same time, the electrical pulses sent across the cable can interfere with each other.
+
+These slows down network communications, and is the primary reason hubs are fairly rare. They're mostly a historical artifact today. A much more common way of connecting many computers is with a more sophisticated device, known as a network switch, originally known as a switching hub. 
