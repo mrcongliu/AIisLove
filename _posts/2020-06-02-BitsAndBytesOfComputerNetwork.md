@@ -124,6 +124,8 @@ Connect different devices to each other, allowing data to be transmitted over th
 
 The most common forms of copper twisted-pair cables used in networking are Cat5, Cat5e, and Cat6 cables.
 
+Differences in how these twisted pairs are arranged inside these cables can drastically alter how quickly data can be sent accross them and how resistent these signals are to outside interference.
+
 Cat5e cables have mostly replaced those older Cat5 cables because their internals reduce crosstalk.
 
 > **Crosstalk**
@@ -137,3 +139,4 @@ Cat5e cables have mostly replaced those older Cat5 cables because their internal
 Unlike copper, which uses electrical voltages, fiber cables use pulses of light to represent the ones and zeros of the underlying data.
 
 Fiber cables can generally transport data quicker than copper cables can, but they're much more expensive and fragile. Fiber can also transport data over much longer distances than copper can without suffering potential data loss.
+
