@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-06-18T03:17:18-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">The Bits and Bytes of Computer Networking</title><link href="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" rel="alternate" type="text/html" title="The Bits and Bytes of Computer Networking" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork</id><content type="html" xml:base="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html">&lt;p&gt;Key Concepts**&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-06-18T03:56:57-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">The Bits and Bytes of Computer Networking</title><link href="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" rel="alternate" type="text/html" title="The Bits and Bytes of Computer Networking" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork</id><content type="html" xml:base="https://www.ai4love.xyz//computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html">&lt;p&gt;Key Concepts**&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Describe how the TCP/IP five layer network model works.&lt;/li&gt;
@@ -348,6 +348,36 @@
 &lt;p&gt;Just like how binary is a way to represent numbers with only two digits, hexadecimal is a way to represent numbers using 16 digits. Since we don’t have numerals to represent any individual digit larger than nine, hexadecimal numbers employed the letters A, B, C, D, E, and F to represent the numbers 10, 11, 12, 13, 14, and 15.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/Hexadecimal.png&quot; alt=&quot;&quot; title=&quot;Hexadecimal vs Decimal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another way to reference each group of numbers in a MAC address is an octet.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Octet&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;In computer networking, any number that can be represented by 8 bits&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You might wonder how could MAC addresses be globally unique. The short answer is that a 48-bit number is much larger than you might expect. The total number of a possible MAC addresses that could exist is 2^48 or 281,474,976,710,656 unique possibilities.&lt;/p&gt;
+
+&lt;p&gt;A MAC address is split into two sections.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;**Organizationally Unique Identifier (OUI)&lt;/p&gt;
+
+  &lt;p&gt;The first three octets of a MAC address&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The first three octets of a MAC address are assigned to individual hardware manufactures by the IEEE or the Institute of Electrical and Electronics Engineers, which means you can always identify the manufacturer of a network interface purely by its MAC address.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MAC address.png&quot; alt=&quot;&quot; title=&quot;MAC address&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The last three octets of a MAC address can be assigned in any way that the manufacturer would like with the condition that they are only assigned each possible address once to keep all MAC addresses globally unique.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Ethernet&lt;/strong&gt; uses &lt;strong&gt;MAC&lt;/strong&gt; addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as the one the transmission was intended for.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this way, even on a network segment, acting as a single collision domain, each node on that network knows when traffic is intended for it.&lt;/p&gt;
 
 &lt;h4 id=&quot;42-unicast-multicast-and-broadcast&quot;&gt;4.2 Unicast, Multicast, and Broadcast&lt;/h4&gt;
 

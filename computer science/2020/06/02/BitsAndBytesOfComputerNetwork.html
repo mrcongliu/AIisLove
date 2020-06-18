@@ -91,7 +91,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      18 min read
     
 </span></p>
 
@@ -457,6 +457,36 @@ window.onload = wrap_img;
 <p>Just like how binary is a way to represent numbers with only two digits, hexadecimal is a way to represent numbers using 16 digits. Since we don’t have numerals to represent any individual digit larger than nine, hexadecimal numbers employed the letters A, B, C, D, E, and F to represent the numbers 10, 11, 12, 13, 14, and 15.</p>
 
 <p><img src="/images/Hexadecimal.png" alt="" title="Hexadecimal vs Decimal" /></p>
+
+<p>Another way to reference each group of numbers in a MAC address is an octet.</p>
+
+<blockquote>
+  <p><strong>Octet</strong></p>
+
+  <p>In computer networking, any number that can be represented by 8 bits</p>
+</blockquote>
+
+<p>You might wonder how could MAC addresses be globally unique. The short answer is that a 48-bit number is much larger than you might expect. The total number of a possible MAC addresses that could exist is 2^48 or 281,474,976,710,656 unique possibilities.</p>
+
+<p>A MAC address is split into two sections.</p>
+
+<blockquote>
+  <p>**Organizationally Unique Identifier (OUI)</p>
+
+  <p>The first three octets of a MAC address</p>
+</blockquote>
+
+<p>The first three octets of a MAC address are assigned to individual hardware manufactures by the IEEE or the Institute of Electrical and Electronics Engineers, which means you can always identify the manufacturer of a network interface purely by its MAC address.</p>
+
+<p><img src="/images/MAC address.png" alt="" title="MAC address" /></p>
+
+<p>The last three octets of a MAC address can be assigned in any way that the manufacturer would like with the condition that they are only assigned each possible address once to keep all MAC addresses globally unique.</p>
+
+<blockquote>
+  <p><strong>Ethernet</strong> uses <strong>MAC</strong> addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as the one the transmission was intended for.</p>
+</blockquote>
+
+<p>In this way, even on a network segment, acting as a single collision domain, each node on that network knows when traffic is intended for it.</p>
 
 <h4 id="42-unicast-multicast-and-broadcast">4.2 Unicast, Multicast, and Broadcast</h4>
 
