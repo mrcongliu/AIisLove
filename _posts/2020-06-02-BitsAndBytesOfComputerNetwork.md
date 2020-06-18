@@ -300,3 +300,55 @@ Most network ports have two small LEDs. One is the link light and the other is t
 
 A patch panel is a device containing many net ports but it does no other work. It's just a container for the endpoints of many runs of cable. Additional cables are then generally ran from a patch panel to switches or routers to provide network access to the computers at the other end of those links.
 
+
+
+### 4. The Data Link Layer
+
+#### 4.1 Ethernet and MAC Addresses
+
+It is quite surprising to know that traditional cable networks are still the most common option in the workplace and definitely in the data center. The protocol most widely used to send data across individual links is known as Ethernet. Ethernet and the data link layer provide a means for software at higher levels of the stack to send and receive data. One of the primary purposes of this layer is to essentially abstract away the need for any other layer to care about the physical layer and what hardware is in use. By dumping this responsibility on the data link layer, the Internet, transport and application layers can all operate the same no matter how the device they're running on is connected. So, for example, your web browser doesn't need to know if it's running on a device connected via a twisted pair or a wireless connection. It just needs the underlying layers to send and receive data for it. 
+
+![]({{ site.baseurl }}/images/dumping.png "Data link layer")
+
+Key concepts of this section:
+
+* What MAC addresses are and how they're used to identify computers.
+* The various components that make up an Ethernet frame.
+* Differences between Unicast, Multicast and Broadcast addresses.
+* How cyclical redundancy checks help ensure the integrity of data sent via Ethernet.
+
+Ethernet is a fairly old technology. It first came into being in 1980 and saw its first fully polished standardization in 1983. Since then, a few changes have been introduced primarily in order to support ever-increasing bandwidth needs. For the most part though, the Ethernet in use today is comparable to the Ethernet standards as first published all those years ago. 
+
+In 1983, computer networking was totally different than it is today. One of the notable differences in land topology was that the switch or switchable hub hadn't been invented yet. This meant that frequently, many or all devices on a network shared a single collision domain. You might remember from our discussion about hubs and switches that a collision domain is a network segment where only one device can speak at a time. This is because all data in a collision domain is sent to all the notes connected to it. If two computers were to send data across the wire at the same time, this would result in literal collisions of the electrical current representing our ones and zeros, leaving the end result unintelligible. Ethernet, as a protocol, solved this problem by using a technique known as **Carrier Sense Multiple Access with Collision Detection**(CSMA/CD).
+
+> **CSMA/CD**
+>
+> Used to determine when the communications channels are clear, and when a device is free to transmit data
+
+The way CSMA/CD works is actually pretty simple. If there's no data currently being transmitted on the network segment, a node will feel free to send data. If it turns out that two or more computers end up trying to send data at the same time, the computers detect this collision and stop sending data. Each device involved with the collision then waits a random interval of time before trying  to send data again. This random interval helps to prevent all the computers involved in the collision from colliding again the next time they try to transmit anything. When a network segment is a collision domain, it means that all devices on that segment receive all communication across the entire segment. This means we need a way to identify which node the transmission was actually meant for. This is where something known as a media access control address or MAC address comes into play.
+
+> **MAC address**
+>
+> A globally unique identifier attached to an individual network interface
+>
+> It's a 48-bit number normally represented by six groupings of two hexadecimal numbers.
+
+> **Hexadecimal**
+>
+> A way to represent numbers using 16 digits
+
+Just like how binary is a way to represent numbers with only two digits, hexadecimal is a way to represent numbers using 16 digits. Since we don't have numerals to represent any individual digit larger than nine, hexadecimal numbers employed the letters A, B, C, D, E, and F to represent the numbers 10, 11, 12, 13, 14, and 15. 
+
+![]({{ site.baseurl }}/images/Hexadecimal.png "Hexadecimal vs Decimal")
+
+#### 4.2 Unicast, Multicast, and Broadcast
+
+#### 4.3 Dissecting an Ethernet Frame
+
+
+
+
+> ---
+>
+> The End of Week 1
+
