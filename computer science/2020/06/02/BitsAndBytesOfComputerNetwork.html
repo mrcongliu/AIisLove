@@ -91,7 +91,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      16 min read
     
 </span></p>
 
@@ -302,6 +302,172 @@ window.onload = wrap_img;
 <p>Just like a switch can inspect Ethernet data to determine where to send things, a router can inspect IP data to determine where to send things.</p>
 
 <p><img src="/images/router inspect IP data.png" alt="" title="router can inspect IP data" /></p>
+
+<p>Routers store internal tables containing information about how to route traffic between lots of different networks all over the world. The most common type of router you’ll see is one for a home network, or a small office. These devices generally don’t have very detailed routing tables. The purpose of these routes is mainly just to take traffic originating from inside the home, or office LAN, and to forward it along to the ISP, or Internet Service Provider. Once traffic is at the ISP, a way more sophisticated type of router takes over. These core routers from the backbone of the Internet and are directly responsible for how we send and receive data all over the Internet every single day. Core ISP routers don’t just handle a lot more traffic than a home or a small office router. They also have to deal with much more complexity in making decision about where to send traffic.</p>
+
+<p><img src="/images/routerTraffic.png" alt="" title="router's traffic" /></p>
+
+<p>A core router usually has many different connections to many other routers. Routers share data with each other via a protocol known as BGP, or Border Gateway Protocol.</p>
+
+<blockquote>
+  <p><strong>Border Gateway Protocol</strong></p>
+
+  <p>Routers share data with each other via this protocol, which lets them learn about the most optimal paths to forward traffic</p>
+</blockquote>
+
+<p>When you open a web browser and load a webpage, the traffic between computers and the web servers could have traveled over dozens of different routers. The Internet is incredibly large and complicated. And routers are global guides for getting traffic to the right places.</p>
+
+<h4 id="24-servers-and-clients">2.4 Servers and Clients</h4>
+
+<p>The simplest way to think of server is as something that provides data to something requesting that data. The thing receiving the data is referred to as a client.</p>
+
+<p>A server is anything that can provide data to a client, but we can also use the word to refer to the primary purpose of various nodes on our network.</p>
+
+<p><img src="/images/server&amp;client.png" alt="" title="server vs client" /></p>
+
+<h3 id="3-the-physical-layer">3. The Physical Layer</h3>
+
+<h4 id="31-moving-bits-across-the-wire">3.1 Moving Bits Across the Wire</h4>
+
+<p>In some ways, the physical layer of our network stack model is the most complexible. Its main focus is on moving ones and zeros from one end of the link to the next. The physical layer consists of devices and means of transmitting bit across computer networks.</p>
+
+<blockquote>
+  <p><strong>Bit</strong></p>
+
+  <p>The smallest representation of data that a computer can understand; it’s a one or a zero</p>
+</blockquote>
+
+<p>These ones and zeros send across networks at the lowest level are what make up the frames and packets of data. The takeaway is that it doesn’t matter whether you’re streaming your favorite song, emailing your boss, or using an ATM, what you’re really doing is sending ones and zeros across the physical layer of the many different networks between you and the server you’re interacting with.</p>
+
+<p>A standard copper network table, once connected to devices on both ends, will carry a constant electrical charge. Ones and zeros are sent across those network cables through a process called modulation.</p>
+
+<blockquote>
+  <p><strong>Modulation</strong></p>
+
+  <p>A way of varying the voltage of this charge moving across the cable</p>
+</blockquote>
+
+<p>When used for computer networks, this kind of modulation is more specifically known as line coding. It allows devices on either end of a link to understand that an electrical charge in a certain state is a zero, and in another state is a one. Through this seemingly simple techniques, modern networks are capable of moving 10 billion ones and zeros across a single network cable every second.</p>
+
+<p><img src="/images/lineCoding.png" alt="" title="line coding" /></p>
+
+<h4 id="32-twisted-pair-cabling-and-duplexing">3.2 Twisted Pair Cabling and Duplexing</h4>
+
+<p>The most common type of cabling used for connecting computing devices is known as twisted pair. It’s called a twisted pair cable because it features pairs of copper wires that are twisted together. These pairs act as a single conduit for information, and their twisted nature helps protect against electromagnetic interference and crosstalk from neighboring pairs.</p>
+
+<p><img src="/images/cablePairs.png" alt="" title="cable pairs" /></p>
+
+<p>A standard Cat6 cable has eight wires consisting of four twisted pairs inside a single jacket. Exactly how many pairs are actually in use depends on the transmission technology being used. But in all modern forms of networking, it’s important to know that these cables allow for duplex communication.</p>
+
+<blockquote>
+  <p><strong>Duplex communication</strong></p>
+
+  <p>The concept that information can flow in both directions across the cable</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Simplex communication</strong></p>
+
+  <p>This process is unidirectional</p>
+</blockquote>
+
+<p>Think about a baby monitor, where the transmission of data only goes in one direction making it a simplex communication. A phone call on the other hand is duplex since both parties can listen and speak.</p>
+
+<p><img src="/images/duplex.png" alt="" title="Simplex vs Full-duplex" /></p>
+
+<p>The way networking cables ensure that duplex communication is possible is by reserving one or two pairs for communication in one direction. They then use other one or two pairs for communicating in the other direction. So, devices on either side of a networking link can both communicate with each other at the exact same time. This is known as full duplex.</p>
+
+<p><img src="/images/half-duplex.png" alt="" title="Half-duplex" /></p>
+
+<p>If there’s something wrong with the connection, you might see a network link degrade and report itself as operating as half-duplex. Half-duplex means that, while communication is possible in each direction, only one device can be communicating at a time.</p>
+
+<h4 id="33-supplemental-reading-for-ethernet-over-twisted-pair-technologies">3.3 Supplemental Reading for Ethernet Over Twisted Pair Technologies</h4>
+
+<p><strong>Ethernet over twisted pair technologies</strong> are the communications protocols that determine how much data can be sent over a twisted pair cable, how quickly that data can be sent, and how long a network cable can be before the data quality begins to degrade.</p>
+
+<p>Read more about Ethernet over Twisted Pair technologies:</p>
+
+<p>https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair</p>
+
+<h4 id="34-network-ports-and-patch-panels">3.4 Network Ports and Patch Panels</h4>
+
+<p>The final steps of how the physical layer works take place at the end points of our network links. Twisted Pair network cables are terminated with a plug that takes the individual internal wires and exposes them. The most common plug is knows as an RJ-45 or Registered Jack 45.</p>
+
+<p><img src="/images/RJ45-plug.png" alt="" title="RJ45 port and plug" /></p>
+
+<p>It’s one of many cable plugs specifications but by far the most common in computer networking. A network cable with an RJ-45 plug can connect to an RJ-45 network port.</p>
+
+<blockquote>
+  <p><strong>Network ports</strong> are generally directly attached to the devices that make up a computer network.</p>
+</blockquote>
+
+<p>Switches would have many network ports because their purpose is to connect many devices. But servers and desktops usually only have one or two. Your laptop, tablet or phone probably don’t have any.</p>
+
+<p><img src="/images/linkLight.png" alt="" title="Link light vs activity light" /></p>
+
+<p>Most network ports have two small LEDs. One is the link light and the other is the activity light. The link light will be lit when a cable is properly connected to two devices that are both powered on. The activity light will flash when data is actively transmitted across the cable. A long time ago, the flashing in the activity light corresponded directly to the one’s and zero’s being sent. Today, computer networks are so fast that the activity light doesn’t really communicate much other than if there’s any traffic or not. On switches, sometimes the same LED is used for both link and activity status. It might even indicate other things like links speed. You’ll have to read up on a particular piece of hardware you’re working with but there will almost always be some troubleshooting data available to you through port lights. Sometimes a network port isn’t connected directly to a device. Instead, there might be network ports mounted in a wall or underneath your desk. These ports are generally connected to the network via cables ran through the walls that eventually end at a patch panel.</p>
+
+<p><img src="/images/patchPanel.png" alt="" title="Patch panel" /></p>
+
+<p>A patch panel is a device containing many net ports but it does no other work. It’s just a container for the endpoints of many runs of cable. Additional cables are then generally ran from a patch panel to switches or routers to provide network access to the computers at the other end of those links.</p>
+
+<h3 id="4-the-data-link-layer">4. The Data Link Layer</h3>
+
+<h4 id="41-ethernet-and-mac-addresses">4.1 Ethernet and MAC Addresses</h4>
+
+<p>It is quite surprising to know that traditional cable networks are still the most common option in the workplace and definitely in the data center. The protocol most widely used to send data across individual links is known as Ethernet. Ethernet and the data link layer provide a means for software at higher levels of the stack to send and receive data. One of the primary purposes of this layer is to essentially abstract away the need for any other layer to care about the physical layer and what hardware is in use. By dumping this responsibility on the data link layer, the Internet, transport and application layers can all operate the same no matter how the device they’re running on is connected. So, for example, your web browser doesn’t need to know if it’s running on a device connected via a twisted pair or a wireless connection. It just needs the underlying layers to send and receive data for it.</p>
+
+<p><img src="/images/dumping.png" alt="" title="Data link layer" /></p>
+
+<p>Key concepts of this section:</p>
+
+<ul>
+  <li>What MAC addresses are and how they’re used to identify computers.</li>
+  <li>The various components that make up an Ethernet frame.</li>
+  <li>Differences between Unicast, Multicast and Broadcast addresses.</li>
+  <li>How cyclical redundancy checks help ensure the integrity of data sent via Ethernet.</li>
+</ul>
+
+<p>Ethernet is a fairly old technology. It first came into being in 1980 and saw its first fully polished standardization in 1983. Since then, a few changes have been introduced primarily in order to support ever-increasing bandwidth needs. For the most part though, the Ethernet in use today is comparable to the Ethernet standards as first published all those years ago.</p>
+
+<p>In 1983, computer networking was totally different than it is today. One of the notable differences in land topology was that the switch or switchable hub hadn’t been invented yet. This meant that frequently, many or all devices on a network shared a single collision domain. You might remember from our discussion about hubs and switches that a collision domain is a network segment where only one device can speak at a time. This is because all data in a collision domain is sent to all the notes connected to it. If two computers were to send data across the wire at the same time, this would result in literal collisions of the electrical current representing our ones and zeros, leaving the end result unintelligible. Ethernet, as a protocol, solved this problem by using a technique known as <strong>Carrier Sense Multiple Access with Collision Detection</strong>(CSMA/CD).</p>
+
+<blockquote>
+  <p><strong>CSMA/CD</strong></p>
+
+  <p>Used to determine when the communications channels are clear, and when a device is free to transmit data</p>
+</blockquote>
+
+<p>The way CSMA/CD works is actually pretty simple. If there’s no data currently being transmitted on the network segment, a node will feel free to send data. If it turns out that two or more computers end up trying to send data at the same time, the computers detect this collision and stop sending data. Each device involved with the collision then waits a random interval of time before trying  to send data again. This random interval helps to prevent all the computers involved in the collision from colliding again the next time they try to transmit anything. When a network segment is a collision domain, it means that all devices on that segment receive all communication across the entire segment. This means we need a way to identify which node the transmission was actually meant for. This is where something known as a media access control address or MAC address comes into play.</p>
+
+<blockquote>
+  <p><strong>MAC address</strong></p>
+
+  <p>A globally unique identifier attached to an individual network interface</p>
+
+  <p>It’s a 48-bit number normally represented by six groupings of two hexadecimal numbers.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Hexadecimal</strong></p>
+
+  <p>A way to represent numbers using 16 digits</p>
+</blockquote>
+
+<p>Just like how binary is a way to represent numbers with only two digits, hexadecimal is a way to represent numbers using 16 digits. Since we don’t have numerals to represent any individual digit larger than nine, hexadecimal numbers employed the letters A, B, C, D, E, and F to represent the numbers 10, 11, 12, 13, 14, and 15.</p>
+
+<p><img src="/images/Hexadecimal.png" alt="" title="Hexadecimal vs Decimal" /></p>
+
+<h4 id="42-unicast-multicast-and-broadcast">4.2 Unicast, Multicast, and Broadcast</h4>
+
+<h4 id="43-dissecting-an-ethernet-frame">4.3 Dissecting an Ethernet Frame</h4>
+
+<blockquote>
+  <hr />
+
+  <p>The End of Week 1</p>
+</blockquote>
+
 
   </div><a class="u-url" href="/computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" hidden></a>
 </article>
