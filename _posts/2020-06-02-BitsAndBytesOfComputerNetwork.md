@@ -341,6 +341,30 @@ Just like how binary is a way to represent numbers with only two digits, hexadec
 
 ![]({{ site.baseurl }}/images/Hexadecimal.png "Hexadecimal vs Decimal")
 
+Another way to reference each group of numbers in a MAC address is an octet.
+
+> **Octet**
+>
+> In computer networking, any number that can be represented by 8 bits
+
+You might wonder how could MAC addresses be globally unique. The short answer is that a 48-bit number is much larger than you might expect. The total number of a possible MAC addresses that could exist is 2^48 or 281,474,976,710,656 unique possibilities.
+
+A MAC address is split into two sections. 
+
+> **Organizationally Unique Identifier (OUI)
+>
+> The first three octets of a MAC address
+
+The first three octets of a MAC address are assigned to individual hardware manufactures by the IEEE or the Institute of Electrical and Electronics Engineers, which means you can always identify the manufacturer of a network interface purely by its MAC address.
+
+![]({{ site.baseurl }}/images/MAC address.png "MAC address") 
+
+The last three octets of a MAC address can be assigned in any way that the manufacturer would like with the condition that they are only assigned each possible address once to keep all MAC addresses globally unique.
+
+> **Ethernet** uses **MAC** addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as the one the transmission was intended for.
+
+In this way, even on a network segment, acting as a single collision domain, each node on that network knows when traffic is intended for it.
+
 #### 4.2 Unicast, Multicast, and Broadcast
 
 #### 4.3 Dissecting an Ethernet Frame
