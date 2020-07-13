@@ -6,15 +6,11 @@ permalink: /about/
 
 Hello, this is Cong Liu(刘聪), a self-taught programmer.
 
-**LinkedIn:** https://www.linkedin.com/in/clevercongliu/
-
-**GitHub:** https://github.com/CongLiu-CN
-
-**Ted Translator:** https://www.ted.com/profiles/11815017/translator
-
-**Blog:** https://www.ai4love.xyz/
-
-**Resume:** https://www.ai4love.xyz/about/
+- [**LinkedIn**](https://www.linkedin.com/in/clevercongliu/)
+- [**GitHub**](https://github.com/CongLiu-CN)
+- [**Ted Translator**](https://www.ted.com/profiles/11815017/translator)
+- [**Machine Learning Blog**](https://www.ai4love.xyz/)
+- [**Resume**](https://www.ai4love.xyz/about/)
 
 
 
@@ -26,7 +22,7 @@ Hello, this is Cong Liu(刘聪), a self-taught programmer.
 
 * Udemy - [Technical Support Fundamentals](https://www.coursera.org/account/accomplishments/records/4MBGAP2EDQBT) (March 23, 2020) 
 
-* Udemy - [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/certificate/UC-0LJF8PLU/) (July 7, 2019) 
+* Udemy - [Master the Coding Interview: Data Structures+Algorithms](https://www.udemy.com/certificate/UC-0LJF8PLU/) (July 7, 2019) 
 
 * Udemy - [Advanced JavaScript Concepts](https://www.udemy.com/certificate/UC-789PKBXL/) (July 3, 2019) 
 
