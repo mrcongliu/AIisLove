@@ -4,19 +4,37 @@ title: About Me
 permalink: /about/
 ---
 
-### Who am I?
+Hello, this is Cong Liu(刘聪), a self-taught programmer.
 
-Hello, this is Liu Cong (刘聪), a self-taught programmer.
+**LinkedIn:** https://www.linkedin.com/in/clevercongliu/
 
-### What have I learned?
+**GitHub:** https://github.com/CongLiu-CN
 
-* Udemy - Advanced JavaScript Concepts (July 3, 2019) https://www.udemy.com/certificate/UC-789PKBXL/
+**Ted Translator:** https://www.ted.com/profiles/11815017/translator
 
-* MongoDB - M220JS: MongoDB for JavaScript Developers (Jun 18, 2019) https://university.mongodb.com/course_completion/b6ce1e2a-31c4-4a3a-9940-eb40d18b64b6
+**Blog:** https://www.ai4love.xyz/
 
-* Udemy - The Complete Web Developer in 2019: Zero to Mastery (April 30, 2019) https://www.udemy.com/certificate/UC-A3CH69ET/
+**Resume:** https://www.ai4love.xyz/about/
 
-* freeCodeCamp - Responsive Web Design (March 2, 2019) https://www.freecodecamp.org/certification/liucong/responsive-web-design
+
+
+### Online Courses
+
+* Udemy - [Complete Machine Learning and Data Science: Zero to Mastery](https://www.udemy.com/certificate/UC-ddc48921-e060-4be3-9470-4938f7f80f17/) (July 7, 2020) 
+
+* Udemy - [Complete Python Developer: Zero to Mastery](https://www.udemy.com/certificate/UC-276e474c-6206-4fb9-bf89-f0b0a9ad7053/) (March 9, 2020) 
+
+* Udemy - [Technical Support Fundamentals](https://www.coursera.org/account/accomplishments/records/4MBGAP2EDQBT) (March 23, 2020) 
+
+* Udemy - [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/certificate/UC-0LJF8PLU/) (July 7, 2019) 
+
+* Udemy - [Advanced JavaScript Concepts](https://www.udemy.com/certificate/UC-789PKBXL/) (July 3, 2019) 
+
+* MongoDB - [M220JS: MongoDB for JavaScript Developers](https://university.mongodb.com/course_completion/b6ce1e2a-31c4-4a3a-9940-eb40d18b64b6) (Jun 18, 2019) 
+
+* Udemy - [The Complete Web Developer in 2019: Zero to Mastery](https://www.udemy.com/certificate/UC-A3CH69ET/) (April 30, 2019) 
+
+* freeCodeCamp - [Responsive Web Design](https://www.freecodecamp.org/certification/liucong/responsive-web-design) (March 2, 2019) 
 
   
 
