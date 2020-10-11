@@ -44,6 +44,8 @@ Represents the physical devices that interconnect computers
 
 Responsible for defining a common way of interpreting these signals so network devices can communicate
 
+
+
 > The **Ethernet** standards also define a protocol responsible for getting data to nodes on the same network or link.
 
 
@@ -52,9 +54,13 @@ Responsible for defining a common way of interpreting these signals so network d
 
 Allows different networks to communicate with each other through devices known as routers
 
+
+
 > **Internetwork**
 >
 > A collection of networks connected together through routers, the most famous of these being the **Internet**
+
+
 
 > **IP(Internet Protocol)**
 >
@@ -66,8 +72,12 @@ Allows different networks to communicate with each other through devices known a
 
 Sorts out which client and server programs are supposed to get that data
 
+
+
 > **TCP(Transmission Control Protocol)**
->
+
+
+
 > **UDP(User Datagram Protocol)**
 >
 > The big difference between the two is that TCP provides mechanisms to ensure that data is reliably delivered while UDP does not.
@@ -117,10 +127,14 @@ Learn more about the OSI Networking Model:
 
 Connect different devices to each other, allowing data to be transmitted over them
 
+
+
 > Most network cables used today can be split into two categories: 
 >
 > * Copper (the most common form)
 > * Fiber (Fiber Optic Cables)
+
+
 
 The most common forms of copper twisted-pair cables used in networking are Cat5, Cat5e, and Cat6 cables.
 
@@ -128,15 +142,23 @@ Differences in how these twisted pairs are arranged inside these cables can dras
 
 Cat5e cables have mostly replaced those older Cat5 cables because their internals reduce crosstalk.
 
+
+
 > **Crosstalk**
 >
 > When an electrical pulse on one wire is accidentally detected on another wire
 
+
+
 Cat6 cables follow an even more strict specification to avoid crosstalk, making those cables more expensive. Cat6 cables can transfer data faster and more reliably than Cat5e cables can, but because their internal arrangement, they have a shorter maximium distance when used at higher speeds.
+
+
 
 > **Fiber Cables**
 >
 > Contain individual optical fibers, which are tiny tubes made out of glass about the width of a human hair
+
+
 
 Unlike copper, which uses electrical voltages, fiber cables use pulses of light to represent the ones and zeros of the underlying data.
 
@@ -150,19 +172,27 @@ Fiber cables can generally transport data quicker than copper cables can, but th
 
 Unlike cables, which allow you to form point-to-point networking connections, there are network devices that allow for many computers to communicate with each other. The most simple of these devices is a hub.
 
+
+
 > **Hub**
 >
 > A physical layer device that allows for connections from many computers at once.
 
+
+
 ![]({{ site.baseurl }}/images/hub.jpg "Hub")
 
 All devices connected to a hub will end up talking to all other devices at the same time. It's up to each system connected to the hub to determine if the incoming data was meant for them, or to ignore it if it isn't. These causes a lot of noise on the network and creates what's called a collision domain.
+
+
 
 > **Collision Domain**
 >
 > A network segment where only one device can communicate at a time.
 >
 > If multiple systems try sending data at the same time, the electrical pulses sent across the cable can interfere with each other.
+
+
 
 These slows down network communications, and is the primary reason hubs are fairly rare. They're mostly a historical artifact today. A much more common way of connecting many computers is with a more sophisticated device, known as a network switch, originally known as a switching hub. 
 
@@ -178,13 +208,19 @@ This means that a switch can actually inspect the contents of the Ethernet proto
 
 #### 2.3 Routers
 
+
+
 > **Hubs and switches**
 >
 > The primary devices used to connect computers on a single network, usually referred to as a **LAN**, or **local area network**
 
+
+
 > **Router**
 >
 > A device that knows how to forward data between independent networks
+
+
 
 While a hub is a layer 1 device and a switch is a layer 2 device. A router operates at layer 3, a network layer.
 
@@ -200,9 +236,13 @@ Routers store internal tables containing information about how to route traffic 
 
 A core router usually has many different connections to many other routers. Routers share data with each other via a protocol known as BGP, or Border Gateway Protocol.
 
+
+
 > **Border Gateway Protocol**
 >
 > Routers share data with each other via this protocol, which lets them learn about the most optimal paths to forward traffic
+
+
 
 When you open a web browser and load a webpage, the traffic between computers and the web servers could have traveled over dozens of different routers. The Internet is incredibly large and complicated. And routers are global guides for getting traffic to the right places.
 
@@ -224,17 +264,25 @@ A server is anything that can provide data to a client, but we can also use the 
 
 In some ways, the physical layer of our network stack model is the most complexible. Its main focus is on moving ones and zeros from one end of the link to the next. The physical layer consists of devices and means of transmitting bit across computer networks.
 
+
+
 > **Bit**
 >
 > The smallest representation of data that a computer can understand; it's a one or a zero
+
+
 
 These ones and zeros send across networks at the lowest level are what make up the frames and packets of data. The takeaway is that it doesn't matter whether you're streaming your favorite song, emailing your boss, or using an ATM, what you're really doing is sending ones and zeros across the physical layer of the many different networks between you and the server you're interacting with.
 
 A standard copper network table, once connected to devices on both ends, will carry a constant electrical charge. Ones and zeros are sent across those network cables through a process called modulation.
 
+
+
 > **Modulation**
 >
 > A way of varying the voltage of this charge moving across the cable
+
+
 
 When used for computer networks, this kind of modulation is more specifically known as line coding. It allows devices on either end of a link to understand that an electrical charge in a certain state is a zero, and in another state is a one. Through this seemingly simple techniques, modern networks are capable of moving 10 billion ones and zeros across a single network cable every second.
 
@@ -250,13 +298,19 @@ The most common type of cabling used for connecting computing devices is known a
 
 A standard Cat6 cable has eight wires consisting of four twisted pairs inside a single jacket. Exactly how many pairs are actually in use depends on the transmission technology being used. But in all modern forms of networking, it's important to know that these cables allow for duplex communication.
 
+
+
 > **Duplex communication**
 >
 > The concept that information can flow in both directions across the cable
 
+
+
 >  **Simplex communication**
 >
 > This process is unidirectional
+
+
 
 Think about a baby monitor, where the transmission of data only goes in one direction making it a simplex communication. A phone call on the other hand is duplex since both parties can listen and speak. 
 
@@ -321,11 +375,17 @@ Ethernet is a fairly old technology. It first came into being in 1980 and saw it
 
 In 1983, computer networking was totally different than it is today. One of the notable differences in land topology was that the switch or switchable hub hadn't been invented yet. This meant that frequently, many or all devices on a network shared a single collision domain. You might remember from our discussion about hubs and switches that a collision domain is a network segment where only one device can speak at a time. This is because all data in a collision domain is sent to all the notes connected to it. If two computers were to send data across the wire at the same time, this would result in literal collisions of the electrical current representing our ones and zeros, leaving the end result unintelligible. Ethernet, as a protocol, solved this problem by using a technique known as **Carrier Sense Multiple Access with Collision Detection**(CSMA/CD).
 
+
+
 > **CSMA/CD**
 >
 > Used to determine when the communications channels are clear, and when a device is free to transmit data
 
+
+
 The way CSMA/CD works is actually pretty simple. If there's no data currently being transmitted on the network segment, a node will feel free to send data. If it turns out that two or more computers end up trying to send data at the same time, the computers detect this collision and stop sending data. Each device involved with the collision then waits a random interval of time before trying  to send data again. This random interval helps to prevent all the computers involved in the collision from colliding again the next time they try to transmit anything. When a network segment is a collision domain, it means that all devices on that segment receive all communication across the entire segment. This means we need a way to identify which node the transmission was actually meant for. This is where something known as a media access control address or MAC address comes into play.
+
+
 
 > **MAC address**
 >
@@ -333,9 +393,13 @@ The way CSMA/CD works is actually pretty simple. If there's no data currently be
 >
 > It's a 48-bit number normally represented by six groupings of two hexadecimal numbers.
 
+
+
 > **Hexadecimal**
 >
 > A way to represent numbers using 16 digits
+
+
 
 Just like how binary is a way to represent numbers with only two digits, hexadecimal is a way to represent numbers using 16 digits. Since we don't have numerals to represent any individual digit larger than nine, hexadecimal numbers employed the letters A, B, C, D, E, and F to represent the numbers 10, 11, 12, 13, 14, and 15. 
 
@@ -343,17 +407,25 @@ Just like how binary is a way to represent numbers with only two digits, hexadec
 
 Another way to reference each group of numbers in a MAC address is an octet.
 
+
+
 > **Octet**
 >
 > In computer networking, any number that can be represented by 8 bits
+
+
 
 You might wonder how could MAC addresses be globally unique. The short answer is that a 48-bit number is much larger than you might expect. The total number of a possible MAC addresses that could exist is 2^48 or 281,474,976,710,656 unique possibilities.
 
 A MAC address is split into two sections. 
 
-> **Organizationally Unique Identifier (OUI)
+
+
+> **Organizationally Unique Identifier (OUI)**
 >
 > The first three octets of a MAC address
+
+
 
 The first three octets of a MAC address are assigned to individual hardware manufactures by the IEEE or the Institute of Electrical and Electronics Engineers, which means you can always identify the manufacturer of a network interface purely by its MAC address.
 
@@ -370,9 +442,63 @@ In this way, even on a network segment, acting as a single collision domain, eac
 #### 4.3 Dissecting an Ethernet Frame
 
 
-
-
 > ---
 >
 > The End of Week 1
+
+
+
+
+
+> The Start of Week 2
+>
+> ---
+
+
+
+### 5. The Network Layer
+
+#### 5.1 The Network Layer
+
+![]({{ site.baseurl }}/images/networkLayer.png "Network Layer")
+
+On a local area network or LAN, nodes can communicate with each other through their physical MAC addresses. This works well on small scale because switches can quickly learn the MAC addresses connected to each other ports to forward transmissions appropriately. But MAC addresses isn't a scheme that scales well, **every single network interface on the planet has a unique MAC address** and they aren't ordered in any systematic way. There is no way of knowing where on the planet a certain MAC address might be at any one point in time, so it's not ideal for communicating across distances. Later on in this lesson, when we introduce **ARP (Address Resolution Protocol)**, you'll see that the way that nodes learn about each other's physical addressing isn't translatable to anything besides a single network signet anyway. Clearly we need another solution, and that is the network layer, and the internet protocol (IP) in the IP addresses that come along with it. By the end of this lesson you'll be able to take identify an IP address, describe how IP datagrams are encapsulated inside the payload of an ethernet frame and correctly identify and describe the many fields of an IP datagram header.
+
+
+
+#### 5.2 IP Addresses
+
+IP addresses are 32-bit-long numbers made up of **four octets**, and each octet is normally described in **decimal numbers**. 8 bits of data or a single octet can represent all decimal numbers from **0 to 255**. For example, 12.30.56.78 is a valid IP address, but 123.456.789.100 would not be because it has numbers larger than what could be represented by 8 bits. This format is known as **dotted decimal notation**. 
+
+![image-20201011115246976](C:\Users\Cong\AppData\Roaming\Typora\typora-user-images\image-20201011115246976.png)
+
+We will deep dive into how some of this works in an upcoming lesson about subnetting. The important thing to know for now is that IP addresses are distributed in large sections to various organizations and companies instead of being determined by hardware vendors. This means that IP addresses are more hierarchical and easier to store data than physical addresses are. Think of IBM, which owns every single IP that has the number 9 as the first octet. At a very high level, this means that if an internet router needs to figure out where to send a data packet intended for the IP address 9.0.0.1, that router only has know to get it to one of IBM's routers. That router can handle the rest of the delivery process from there. 
+
+
+
+> IP addresses belong to networks, not to 
+>
+> the devices attached to those networks.
+
+
+
+It's important to call out that IP addresses belong to the networks, not the devices attached to those networks. So your laptop will always have the same MAC address no matter where you use it, but it will have a different IP address assigned to it at an Internet café than it would when you're at home. The LAN at the Internet café, or the LAN at your house would each be individually responsible for handling out an IP address to your laptop if you power it on there. On a day-to-day basis, getting an IP address is usually a pretty invisible process. For now, remember that on many modern networks you can connect a new device and an IP address will be assigned to it automatically through a technology known as **Dynamic Host Configuration Protocol (DHCP)**. An IP address assigned this way is known as a **Dynamic IP address**. The opposite of this is known as a **Static IP address**, which must be configured on a node manually. 
+
+
+
+> In most cases static IP addresses are reserved for servers and network devices, 
+>
+> while dynamic IP addresses are reserved for clients. 
+
+
+
+But there are certainly situations where this might not be true.
+
+
+
+
+
+
+
+
 
