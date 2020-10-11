@@ -91,7 +91,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      18 min read
+      21 min read
     
 </span></p>
 
@@ -161,7 +161,9 @@ window.onload = wrap_img;
 
 <blockquote>
   <p><strong>TCP(Transmission Control Protocol)</strong></p>
+</blockquote>
 
+<blockquote>
   <p><strong>UDP(User Datagram Protocol)</strong></p>
 
   <p>The big difference between the two is that TCP provides mechanisms to ensure that data is reliably delivered while UDP does not.</p>
@@ -471,7 +473,7 @@ window.onload = wrap_img;
 <p>A MAC address is split into two sections.</p>
 
 <blockquote>
-  <p>**Organizationally Unique Identifier (OUI)</p>
+  <p><strong>Organizationally Unique Identifier (OUI)</strong></p>
 
   <p>The first three octets of a MAC address</p>
 </blockquote>
@@ -497,6 +499,44 @@ window.onload = wrap_img;
 
   <p>The End of Week 1</p>
 </blockquote>
+
+<blockquote>
+  <p>The Start of Week 2</p>
+
+  <hr />
+</blockquote>
+
+<h3 id="5-the-network-layer">5. The Network Layer</h3>
+
+<h4 id="51-the-network-layer">5.1 The Network Layer</h4>
+
+<p><img src="/images/networkLayer.png" alt="" title="Network Layer" /></p>
+
+<p>On a local area network or LAN, nodes can communicate with each other through their physical MAC addresses. This works well on small scale because switches can quickly learn the MAC addresses connected to each other ports to forward transmissions appropriately. But MAC addresses isn’t a scheme that scales well, <strong>every single network interface on the planet has a unique MAC address</strong> and they aren’t ordered in any systematic way. There is no way of knowing where on the planet a certain MAC address might be at any one point in time, so it’s not ideal for communicating across distances. Later on in this lesson, when we introduce <strong>ARP (Address Resolution Protocol)</strong>, you’ll see that the way that nodes learn about each other’s physical addressing isn’t translatable to anything besides a single network signet anyway. Clearly we need another solution, and that is the network layer, and the internet protocol (IP) in the IP addresses that come along with it. By the end of this lesson you’ll be able to take identify an IP address, describe how IP datagrams are encapsulated inside the payload of an ethernet frame and correctly identify and describe the many fields of an IP datagram header.</p>
+
+<h4 id="52-ip-addresses">5.2 IP Addresses</h4>
+
+<p>IP addresses are 32-bit-long numbers made up of <strong>four octets</strong>, and each octet is normally described in <strong>decimal numbers</strong>. 8 bits of data or a single octet can represent all decimal numbers from <strong>0 to 255</strong>. For example, 12.30.56.78 is a valid IP address, but 123.456.789.100 would not be because it has numbers larger than what could be represented by 8 bits. This format is known as <strong>dotted decimal notation</strong>.</p>
+
+<p><img src="C:\Users\Cong\AppData\Roaming\Typora\typora-user-images\image-20201011115246976.png" alt="image-20201011115246976" /></p>
+
+<p>We will deep dive into how some of this works in an upcoming lesson about subnetting. The important thing to know for now is that IP addresses are distributed in large sections to various organizations and companies instead of being determined by hardware vendors. This means that IP addresses are more hierarchical and easier to store data than physical addresses are. Think of IBM, which owns every single IP that has the number 9 as the first octet. At a very high level, this means that if an internet router needs to figure out where to send a data packet intended for the IP address 9.0.0.1, that router only has know to get it to one of IBM’s routers. That router can handle the rest of the delivery process from there.</p>
+
+<blockquote>
+  <p>IP addresses belong to networks, not to</p>
+
+  <p>the devices attached to those networks.</p>
+</blockquote>
+
+<p>It’s important to call out that IP addresses belong to the networks, not the devices attached to those networks. So your laptop will always have the same MAC address no matter where you use it, but it will have a different IP address assigned to it at an Internet café than it would when you’re at home. The LAN at the Internet café, or the LAN at your house would each be individually responsible for handling out an IP address to your laptop if you power it on there. On a day-to-day basis, getting an IP address is usually a pretty invisible process. For now, remember that on many modern networks you can connect a new device and an IP address will be assigned to it automatically through a technology known as <strong>Dynamic Host Configuration Protocol (DHCP)</strong>. An IP address assigned this way is known as a <strong>Dynamic IP address</strong>. The opposite of this is known as a <strong>Static IP address</strong>, which must be configured on a node manually.</p>
+
+<blockquote>
+  <p>In most cases static IP addresses are reserved for servers and network devices,</p>
+
+  <p>while dynamic IP addresses are reserved for clients.</p>
+</blockquote>
+
+<p>But there are certainly situations where this might not be true.</p>
 
 
   </div><a class="u-url" href="/computer%20science/2020/06/02/BitsAndBytesOfComputerNetwork.html" hidden></a>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-07-12T22:46:05-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">Story Telling and Communication</title><link href="https://www.ai4love.xyz//soft%20skill/2020/06/03/StoryTelling.html" rel="alternate" type="text/html" title="Story Telling and Communication" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>https://www.ai4love.xyz//soft%20skill/2020/06/03/StoryTelling</id><content type="html" xml:base="https://www.ai4love.xyz//soft%20skill/2020/06/03/StoryTelling.html">&lt;p&gt;First, ask yourself: “Who’s it for?”&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.ai4love.xyz//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ai4love.xyz//" rel="alternate" type="text/html" /><updated>2020-10-10T23:06:04-05:00</updated><id>https://www.ai4love.xyz//feed.xml</id><title type="html">AI4Love</title><subtitle>A blog that records Cong's love for Machine Learning.</subtitle><entry><title type="html">Story Telling and Communication</title><link href="https://www.ai4love.xyz//soft%20skill/2020/06/03/StoryTelling.html" rel="alternate" type="text/html" title="Story Telling and Communication" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>https://www.ai4love.xyz//soft%20skill/2020/06/03/StoryTelling</id><content type="html" xml:base="https://www.ai4love.xyz//soft%20skill/2020/06/03/StoryTelling.html">&lt;p&gt;First, ask yourself: “Who’s it for?”&lt;/p&gt;
 
 &lt;p&gt;Then ask more questions base on it:&lt;/p&gt;
 
@@ -60,7 +60,9 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;TCP(Transmission Control Protocol)&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
+&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;UDP(User Datagram Protocol)&lt;/strong&gt;&lt;/p&gt;
 
   &lt;p&gt;The big difference between the two is that TCP provides mechanisms to ensure that data is reliably delivered while UDP does not.&lt;/p&gt;
@@ -370,7 +372,7 @@
 &lt;p&gt;A MAC address is split into two sections.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;**Organizationally Unique Identifier (OUI)&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Organizationally Unique Identifier (OUI)&lt;/strong&gt;&lt;/p&gt;
 
   &lt;p&gt;The first three octets of a MAC address&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -395,7 +397,45 @@
   &lt;hr /&gt;
 
   &lt;p&gt;The End of Week 1&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">Key Concepts**</summary></entry><entry><title type="html">How I was rejected by 600 companies and still be OK</title><link href="https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600.html" rel="alternate" type="text/html" title="How I was rejected by 600 companies and still be OK" /><published>2020-05-22T00:00:00-05:00</published><updated>2020-05-22T00:00:00-05:00</updated><id>https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600</id><content type="html" xml:base="https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600.html">&lt;blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Start of Week 2&lt;/p&gt;
+
+  &lt;hr /&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;5-the-network-layer&quot;&gt;5. The Network Layer&lt;/h3&gt;
+
+&lt;h4 id=&quot;51-the-network-layer&quot;&gt;5.1 The Network Layer&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/networkLayer.png&quot; alt=&quot;&quot; title=&quot;Network Layer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On a local area network or LAN, nodes can communicate with each other through their physical MAC addresses. This works well on small scale because switches can quickly learn the MAC addresses connected to each other ports to forward transmissions appropriately. But MAC addresses isn’t a scheme that scales well, &lt;strong&gt;every single network interface on the planet has a unique MAC address&lt;/strong&gt; and they aren’t ordered in any systematic way. There is no way of knowing where on the planet a certain MAC address might be at any one point in time, so it’s not ideal for communicating across distances. Later on in this lesson, when we introduce &lt;strong&gt;ARP (Address Resolution Protocol)&lt;/strong&gt;, you’ll see that the way that nodes learn about each other’s physical addressing isn’t translatable to anything besides a single network signet anyway. Clearly we need another solution, and that is the network layer, and the internet protocol (IP) in the IP addresses that come along with it. By the end of this lesson you’ll be able to take identify an IP address, describe how IP datagrams are encapsulated inside the payload of an ethernet frame and correctly identify and describe the many fields of an IP datagram header.&lt;/p&gt;
+
+&lt;h4 id=&quot;52-ip-addresses&quot;&gt;5.2 IP Addresses&lt;/h4&gt;
+
+&lt;p&gt;IP addresses are 32-bit-long numbers made up of &lt;strong&gt;four octets&lt;/strong&gt;, and each octet is normally described in &lt;strong&gt;decimal numbers&lt;/strong&gt;. 8 bits of data or a single octet can represent all decimal numbers from &lt;strong&gt;0 to 255&lt;/strong&gt;. For example, 12.30.56.78 is a valid IP address, but 123.456.789.100 would not be because it has numbers larger than what could be represented by 8 bits. This format is known as &lt;strong&gt;dotted decimal notation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;C:\Users\Cong\AppData\Roaming\Typora\typora-user-images\image-20201011115246976.png&quot; alt=&quot;image-20201011115246976&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We will deep dive into how some of this works in an upcoming lesson about subnetting. The important thing to know for now is that IP addresses are distributed in large sections to various organizations and companies instead of being determined by hardware vendors. This means that IP addresses are more hierarchical and easier to store data than physical addresses are. Think of IBM, which owns every single IP that has the number 9 as the first octet. At a very high level, this means that if an internet router needs to figure out where to send a data packet intended for the IP address 9.0.0.1, that router only has know to get it to one of IBM’s routers. That router can handle the rest of the delivery process from there.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;IP addresses belong to networks, not to&lt;/p&gt;
+
+  &lt;p&gt;the devices attached to those networks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s important to call out that IP addresses belong to the networks, not the devices attached to those networks. So your laptop will always have the same MAC address no matter where you use it, but it will have a different IP address assigned to it at an Internet café than it would when you’re at home. The LAN at the Internet café, or the LAN at your house would each be individually responsible for handling out an IP address to your laptop if you power it on there. On a day-to-day basis, getting an IP address is usually a pretty invisible process. For now, remember that on many modern networks you can connect a new device and an IP address will be assigned to it automatically through a technology known as &lt;strong&gt;Dynamic Host Configuration Protocol (DHCP)&lt;/strong&gt;. An IP address assigned this way is known as a &lt;strong&gt;Dynamic IP address&lt;/strong&gt;. The opposite of this is known as a &lt;strong&gt;Static IP address&lt;/strong&gt;, which must be configured on a node manually.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In most cases static IP addresses are reserved for servers and network devices,&lt;/p&gt;
+
+  &lt;p&gt;while dynamic IP addresses are reserved for clients.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But there are certainly situations where this might not be true.&lt;/p&gt;</content><author><name></name></author><summary type="html">Key Concepts**</summary></entry><entry><title type="html">How I was rejected by 600 companies and still be OK</title><link href="https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600.html" rel="alternate" type="text/html" title="How I was rejected by 600 companies and still be OK" /><published>2020-05-22T00:00:00-05:00</published><updated>2020-05-22T00:00:00-05:00</updated><id>https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600</id><content type="html" xml:base="https://www.ai4love.xyz//mindset/2020/05/22/RejectedBy600.html">&lt;blockquote&gt;
   &lt;p&gt;I returned to Beijing on 8 May in 2020 to find a developer job. Machine learning and data analysis are my top two priorities. Unfortunately, I was rejected by over 600 companies.&lt;/p&gt;
 &lt;/blockquote&gt;
 
