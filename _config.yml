@@ -72,6 +72,10 @@ default_badges:
   binder: true
   colab: true
 
+header_pages:
+  - about.md
+  - portfolio.md
+
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
