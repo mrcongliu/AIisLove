@@ -13,7 +13,11 @@ github_username: CongLiu-CN
 github_repo: "AIisLove"
 
 # OPTIONAL: override baseurl and url if using a custom domain
+<<<<<<< HEAD
 # Note: leave out the trailing / from this value.
+=======
+# Note: leave out the trailing / from this value. 
+>>>>>>> 4c1de9cae9b142c9b340e83f264f7ea2cf172f62
 url: "https://www.liucong.ca/" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################

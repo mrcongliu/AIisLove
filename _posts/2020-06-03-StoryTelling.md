@@ -1,8 +1,10 @@
 ---
-layout: post
-description: The skill of story telling and communication
-categories: [Soft Skill]
 title: Story Telling and Communication
+description: "The skill of story telling and communication"
+layout: post
+toc: false
+comments: true
+categories: [Soft Skill]
 ---
 
 
