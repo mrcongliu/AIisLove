@@ -2,30 +2,30 @@
 #
 # This config file is meant for settings that affect your whole blog.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: AI4Love
-description: A blog that records Cong's love for Machine Learning.
+title: Cong Liu | 刘聪
+description: 刘聪的博客
 github_username: CongLiu-CN
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "AIisLove"
 
 # OPTIONAL: override baseurl and url if using a custom domain
-# Note: leave out the trailing / from this value. 
-url: "https://www.ai4love.xyz/" # the base hostname & protocol for your site, e.g. http://example.com
+# Note: leave out the trailing / from this value.
+url: "https://www.liucong.ca/" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
 #
 #### Scenario One: If you do not have a Custom Domain #####
 #    -  if you are not using a custom domain, the baseurl *must* be set to your repo name
-# 
+#
 ####  Scenario Two: If you have a Custom Domain #####
 # 1. If your domain does NOT have a subpath, this leave this value as ""
-# 2. If your domain does have a subpath, you must preceed the value with a / and NOT have a / at the end.  
-#      For example: 
+# 2. If your domain does have a subpath, you must preceed the value with a / and NOT have a / at the end.
+#      For example:
 #           "" is valid
 #           "/blog"        is valid
 #            "/blog/site/" is invalid  ( / at the end)
@@ -43,7 +43,7 @@ minima:
     github: CongLiu-CN
 
 # Set this to true to get LaTeX math equation support
-use_math: 
+use_math:
 
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
@@ -55,7 +55,7 @@ show_image: false
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: 
+google_analytics:
 
 exclude:
   - docker-compose.yml
@@ -94,7 +94,7 @@ paginate_path: /page:num/
 remote_theme: jekyll/minima
 
 titles_from_headings:
-  enabled:     true
+  enabled: true
   strip_title: true
   collections: true
 
@@ -106,3 +106,9 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+# to limit size of xml as it can grow quite large.
+feed:
+  posts_limit: 8 #default posts_limit: 10
+  excerpt_only: true
+  url: "https://feedrabbit.com/?url=https://cn.congliu.ca/"

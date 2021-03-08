@@ -39,7 +39,7 @@ jtd.onReady = function(ready) {
 //       pageHeader.classList.toggle('nav-open');
 //       navTrigger.classList.toggle('nav-open');
 //       navTrigger.innerText = textToggle;
-//       navTrigger.setAttribute('data-text-toggle', text);
+//       nav.setAttribute('data-text-toggle', text);
 //       textToggle = text;
 //     })
 //   }

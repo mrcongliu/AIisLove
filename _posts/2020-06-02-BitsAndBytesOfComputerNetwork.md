@@ -470,7 +470,7 @@ On a local area network or LAN, nodes can communicate with each other through th
 
 IP addresses are 32-bit-long numbers made up of **four octets**, and each octet is normally described in **decimal numbers**. 8 bits of data or a single octet can represent all decimal numbers from **0 to 255**. For example, 12.30.56.78 is a valid IP address, but 123.456.789.100 would not be because it has numbers larger than what could be represented by 8 bits. This format is known as **dotted decimal notation**. 
 
-![image-20201011115246976](C:\Users\Cong\AppData\Roaming\Typora\typora-user-images\image-20201011115246976.png)
+![]({{ site.baseurl }}/images/IPAddress.png "Dotted decimal notation") 
 
 We will deep dive into how some of this works in an upcoming lesson about subnetting. The important thing to know for now is that IP addresses are distributed in large sections to various organizations and companies instead of being determined by hardware vendors. This means that IP addresses are more hierarchical and easier to store data than physical addresses are. Think of IBM, which owns every single IP that has the number 9 as the first octet. At a very high level, this means that if an internet router needs to figure out where to send a data packet intended for the IP address 9.0.0.1, that router only has know to get it to one of IBM's routers. That router can handle the rest of the delivery process from there. 
 
